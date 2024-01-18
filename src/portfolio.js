@@ -36,12 +36,10 @@ const socialMediaLinks = {
   github: "https://github.com/Insh72amim",
   linkedin: "https://www.linkedin.com/in/syed-amim/",
   instagram: "https://www.instagram.com/syed_amim/",
-  gitlab: "https://gitlab.com/amim.insherah",
   facebook: "https://www.facebook.com/syed.amim.786",
-  medium: "https://medium.com/@amim.insherah",
+  gitlab: "https://gitlab.com/amim.insherah",
   twitter: "https://twitter.com/amiminsherah",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  //medium: "https://medium.com/@amim.insherah",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -49,7 +47,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What do I do ?",
-  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH",
   skills: [
     emoji(
       "➜ Create dynamic and user-friendly web user interfaces by utilizing ReactJS and Next.js to ensure high interactivity and responsiveness."
@@ -265,7 +263,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -299,7 +297,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Certifications"),
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
@@ -339,9 +337,8 @@ const achievementSection = {
 };
 
 const codingProfile = {
-  title: emoji("Coding Profile </>"),
-  subtitle:
-    "Competitive Programming Profiles and Solving Data Structures and Algorithms",
+  title: emoji("Coding Profiles </>"),
+  subtitle: "Competitive Programming Profiles and Solving DSA",
 
   codingProfileCards: [
     {
@@ -361,8 +358,7 @@ const codingProfile = {
       title: "Codeforces",
       subtitle:
         "Passed the AWS Developer Associate Exam. It showcases knowledge and understanding of core AWS services, uses, and basic AWS architecture best practices, and proficiency in developing, deploying, and debugging cloud-based applications by using AWS. .",
-      image:
-        "https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3628695-3029920.png",
+      image: require("./assets/images/codeforces.png"),
       imageAlt: "codeforces logo",
       profile: {
         name: "Codeforces Profile",
@@ -374,7 +370,7 @@ const codingProfile = {
       title: "Codechef",
       subtitle:
         "Passed the AWS Developer Associate Exam. It showcases knowledge and understanding of core AWS services, uses, and basic AWS architecture best practices, and proficiency in developing, deploying, and debugging cloud-based applications by using AWS. .",
-      image: "https://cdn.codechef.com/images/cc-logo.svg",
+      image: require("./assets/images/codechef.png"),
       imageAlt: "Codechef Logo",
       profile: {
         name: "CodeChef Profile",

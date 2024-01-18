@@ -7,7 +7,6 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  blogSection,
   achievementSection,
   codingProfile
 } from "../../portfolio";
@@ -17,7 +16,6 @@ function Header() {
   const viewExperience = workExperiences.display;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
   const viewCodingProfile = codingProfile.display;
 
   return (
@@ -50,9 +48,9 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewAchievement && (
+          {viewExperience && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#projects">Projects</a>
             </li>
           )}
           {viewCodingProfile && (
@@ -60,9 +58,9 @@ function Header() {
               <a href="#codingprofile">CodingProfile</a>
             </li>
           )}
-          {viewBlog && (
+          {viewAchievement && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#achievements">Achievements</a>
             </li>
           )}
           <li>
