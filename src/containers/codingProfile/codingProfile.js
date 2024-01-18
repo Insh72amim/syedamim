@@ -14,45 +14,43 @@ export default function CodingProfile() {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="codingprofile">
-        <div className="codingProfile-main-div">
-          <div className="codingProfile-header">
-            <h1
-              className={
-                isDark
-                  ? "dark-mode heading codingProfile-heading"
-                  : "heading codingProfile-heading"
-              }
-            >
-              {codingProfile.title}
-            </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle codingProfile-subtitle"
-                  : "subTitle codingProfile-subtitle"
-              }
-            >
-              {codingProfile.subtitle}
-            </p>
-          </div>
-          <div className="codingProfile-cards-div">
-            {codingProfile.codingProfileCards.map((card, i) => {
-              return (
-                <CodingProfileCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    image: card.image,
-                    imageAlt: card.imageAlt,
-                    profile: card.profile,
-                    bulletPoints: card.bulletPoints
-                  }}
-                />
-              );
-            })}
-          </div>
+        <div className="codingProfile-header">
+          <h1
+            className={
+              isDark
+                ? "dark-mode heading codingProfile-heading"
+                : "heading codingProfile-heading"
+            }
+          >
+            {codingProfile.title}
+          </h1>
+          <p
+            className={
+              isDark
+                ? "dark-mode subTitle codingProfile-subtitle"
+                : "subTitle codingProfile-subtitle"
+            }
+          >
+            {codingProfile.subtitle}
+          </p>
+        </div>
+        <div className="codingProfile-section">
+          {codingProfile.codingProfileCards.map((card, i) => {
+            return (
+              <CodingProfileCard
+                key={i}
+                isDark={isDark}
+                cardInfo={{
+                  title: card.title,
+                  description: card.subtitle,
+                  image: card.image,
+                  imageAlt: card.imageAlt,
+                  profile: card.profile,
+                  bulletPoints: card.bulletPoints
+                }}
+              />
+            );
+          })}
         </div>
       </div>
     </Fade>

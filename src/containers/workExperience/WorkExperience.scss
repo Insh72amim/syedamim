@@ -1,10 +1,10 @@
 .experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
   display: flex;
-  flex-direction: column; /* Change flex-direction to column */
-  align-items: flex-start;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-around; /* Adjust to space the cards evenly */
+  max-width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .experience-heading {

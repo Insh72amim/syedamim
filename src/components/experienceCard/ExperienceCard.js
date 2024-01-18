@@ -66,7 +66,6 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.date}
         </h5>
-
         <p
           className={
             isDark
@@ -79,17 +78,13 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
-        <div class="list-tech-image-exp">
-          {cardInfo.techStack.map(url => {
-            return (
-              <img
-                src={url}
-                alt="alternatetext"
-                className="tech-image-exp"
-              ></img>
-            );
-          })}
-        </div>
+      </div>
+      <div class="list-tech-image-exp">
+        {cardInfo.techStack.map(url => {
+          return (
+            <img src={url} alt="alternatetext" className="tech-image-exp"></img>
+          );
+        })}
       </div>
     </div>
   );

@@ -4,10 +4,8 @@ import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 import TechStack from "./TechStack/TechStack";
 import WorkExperience from "./workExperience/WorkExperience";
-import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
-import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
@@ -54,12 +52,9 @@ const Main = () => {
             <Skills />
             <Education />
             <WorkExperience />
-            <Projects />
             <StartupProject />
-            <Achievement />
             <CodingProfile />
-            <Projects />
-            <Blogs />
+            <Achievement />
             <TechStack />
             <Profile />
             <Footer />
