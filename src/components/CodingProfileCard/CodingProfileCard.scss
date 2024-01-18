@@ -1,9 +1,10 @@
 @import "../../_globalColor";
 
 .card-image-codingprofile {
-  max-width: 10%;
-  height: 60%;
+  max-width: 100%;
+  height: auto;
   width: 200px;
+  border-radius: 50%;
 }
 .card-title {
   color: $titleColor;
@@ -17,7 +18,7 @@
   font-size: 1.063rem;
   line-height: 1.5rem;
 }
-.certificate-card {
+.codingprofile-card {
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 1.5rem;
@@ -27,16 +28,16 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.certificate-detail-div {
+.codingprofile-detail-div {
   text-align: center;
 }
-.certificate-card:hover {
+.codingprofile-card:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
-.dark-mode.certificate-card:hover {
+.dark-mode.codingprofile-card:hover {
   box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
 }
-.certificate-image-div {
+.codingprofile-image-div {
   position: relative;
   height: 250px;
   overflow: hidden;
@@ -44,13 +45,13 @@
   justify-content: center;
   align-items: center;
 }
-.certificate-card-footer {
+.codingprofile-card-footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
-.certificate-card-footer span.certificate-tag {
+.codingprofile-card-footer span.codingprofile-tag {
   background: $buttonColor;
   color: $lightBackground3;
   vertical-align: middle;
@@ -67,6 +68,6 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
-span.certificate-tag:hover {
+span.codingprofile-tag:hover {
   background: $buttonHover;
 }

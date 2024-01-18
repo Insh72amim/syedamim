@@ -12,17 +12,21 @@ export default function CodingProfileCard({cardInfo, isDark}) {
   }
 
   return (
-    <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
-      <div className="certificate-image-div">
+    <div
+      className={isDark ? "dark-mode codingprofile-card" : "codingprofile-card"}
+    >
+      <div className="codingprofile-image-div">
         <img
           src={cardInfo.image}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
-          className="card-image"
+          className="card-image-codingprofile"
         ></img>
       </div>
-      <div className="certificate-card-footer">
+      <div className="codingprofile-card-footer">
         <span
-          className={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
+          className={
+            isDark ? "dark-mode codingprofile-tag" : "codingprofile-tag"
+          }
           onClick={() =>
             openUrlInNewTab(cardInfo.profile.url, cardInfo.profile.name)
           }
@@ -30,7 +34,7 @@ export default function CodingProfileCard({cardInfo, isDark}) {
           {cardInfo.profile.name}
         </span>
       </div>
-      <div className="certificate-detail-div">
+      <div className="codingprofile-detail-div">
         <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
           {cardInfo.title}
         </h5>
