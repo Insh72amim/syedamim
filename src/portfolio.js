@@ -267,25 +267,25 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/pharma.jpeg"),
+      projectName: "MyPharma",
+      projectDesc:
+        "Pharma management system to manage medicines, doctors and patients",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/Pharmacy-Management-System"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/mm.png"),
+      projectName: "MovieMania",
+      projectDesc: "A place to review and rate movies and watch trailors.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/moviemaniaFE"
         }
       ]
     }
