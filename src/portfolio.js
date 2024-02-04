@@ -267,7 +267,7 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/pharma.jpeg"),
+      image: require("./assets/images/pharma.png"),
       projectName: "MyPharma",
       projectDesc:
         "Pharma management system to manage medicines, doctors and patients",
