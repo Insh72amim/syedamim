@@ -26,7 +26,7 @@ const greeting = {
   subTitle:
     "A passionate Full Stack Software Developer having an experience of building Web applications and scalable backends with JavaScript, TypeScript, Nodejs, ExpressJs, NestJs, Reactjs,  and NextJs.",
   resumeLink:
-    "https://drive.google.com/file/d/1vKqXgCEXKnQv1KHa5U0U0jqAbAVHGZTp/view", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1_wr00uhNkuEgKBQsgZmpaZaIsXtf8DNa/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -150,12 +150,16 @@ const techStack = {
       listoftechs: listOfIcons(TECH.DATABASES)
     },
     {
+      Stack: "Frontend",
+      listoftechs: listOfIcons(TECH.FRONTEND)
+    },
+    {
       Stack: "Backend",
       listoftechs: listOfIcons(TECH.BACKEND)
     },
     {
-      Stack: "Frontend",
-      listoftechs: listOfIcons(TECH.FRONTEND)
+      Stack: "Testing",
+      listoftechs: listOfIcons(TECH.TESTING)
     },
     {
       Stack: "DevOps",
@@ -226,7 +230,6 @@ const workExperiences = {
         TECH.FRONTEND.React.icon,
         TECH.BACKEND.NODEJS.icon,
         TECH.DATABASES.REDIS.icon,
-        TECH.FRONTEND.SCSS.icon,
         TECH.FRONTEND.Redux.icon,
         TECH.DEVOPS.Docker.icon,
         TECH.DEVOPS.Grafana.icon
@@ -267,14 +270,18 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/pharma.png"),
-      projectName: "MyPharma",
+      image: require("./assets/images/pgh.png"),
+      projectName: "PG Handle",
       projectDesc:
-        "Pharma management system to manage medicines, doctors and patients",
+        "A single place to enroll a guest, manage the stay cycle, bills, notifications and management of guests.",
       footerLink: [
         {
-          name: "Source Code",
-          url: "https://github.com/Insh72amim/Pharmacy-Management-System"
+          name: "frontend Source Code",
+          url: "https://github.com/Insh72amim/moviemaniaFE"
+        },
+        {
+          name: "backend Source Code",
+          url: "https://github.com/Insh72amim/moviemaniaFE"
         }
       ]
     },
@@ -286,6 +293,18 @@ const bigProjects = {
         {
           name: "Source Code",
           url: "https://github.com/Insh72amim/moviemaniaFE"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/pharma.png"),
+      projectName: "MyPharma",
+      projectDesc:
+        "Pharma management system to manage medicines, doctors and patients",
+      footerLink: [
+        {
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/Pharmacy-Management-System"
         }
       ]
     }
@@ -324,6 +343,19 @@ const achievementSection = {
       subtitle:
         "Recieved 250USD for completing highest LinkedIn learnign hour in my company storable as we migrated to new Technologies.",
       image: require("./assets/images/storablelearning.png"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "Storable",
+          url: "https://www.storable.com/"
+        }
+      ]
+    },
+    {
+      title: "Storrior Spotlight Award",
+      subtitle:
+        "Recieved 250USD for contribution as a developer and going above and beyond",
+      image: require("./assets/images/ssa.jpg"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
@@ -400,7 +432,7 @@ const codingProfile = {
       imageAlt: "GeeksForGeeks Logo",
       profile: {
         name: "GeeksForGeeks Profile",
-        url: "https://www.hackerrank.com/profile/amim_insherah"
+        url: "https://www.geeksforgeeks.org/user/amiminsherah"
       },
       bulletPoints: []
     }

@@ -1,9 +1,5 @@
 export const TECH = {
   PROGRAMMINGLANG: {
-    CPP: {
-      name: "C++",
-      icon: "https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png"
-    },
     JS: {
       name: "JavaScript",
       icon: "https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"
@@ -11,6 +7,10 @@ export const TECH = {
     TS: {
       name: "TypeScript",
       icon: "https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png"
+    },
+    CPP: {
+      name: "C++",
+      icon: "https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png"
     },
     JAVA: {
       name: "Java",
@@ -20,13 +20,9 @@ export const TECH = {
       name: "Python",
       icon: "https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png"
     },
-    PHP: {
-      name: "PHP",
-      icon: "https://user-images.githubusercontent.com/25181517/183570228-6a040b9f-3ddf-47a2-a201-743121dac664.png"
-    },
-    RUST: {
-      name: "Rust",
-      icon: "https://user-images.githubusercontent.com/25181517/192599922-3a8ceb1c-ff1d-40bc-b73c-99ea1182d8ad.png"
+    GO: {
+      name: "GO",
+      icon: "https://user-images.githubusercontent.com/25181517/192149581-88194d20-1a37-4be8-8801-5dc0017ffbbe.png"
     }
   },
   DATABASES: {
@@ -56,17 +52,9 @@ export const TECH = {
       name: "CSS",
       icon: "https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"
     },
-    SCSS: {
-      name: "SCSS",
-      icon: "https://user-images.githubusercontent.com/25181517/192158956-48192682-23d5-4bfc-9dfb-6511ade346bc.png"
-    },
     Tailwind: {
       name: "Tailwind",
       icon: "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png"
-    },
-    MUI: {
-      name: "MUI",
-      icon: "https://user-images.githubusercontent.com/25181517/189716630-fe6c084c-6c66-43af-aa49-64c8aea4a5c2.png"
     },
     React: {
       name: "React",
@@ -94,6 +82,24 @@ export const TECH = {
       name: "Nest",
       icon: "https://github.com/marwin1991/profile-technology-icons/assets/136815194/519bfaf3-c242-431e-a269-876979f05574"
     },
+    Django: {
+      name: "Django",
+      icon: "https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4"
+    },
+    FLASK: {
+      name: "Flask",
+      icon: "https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png"
+    },
+    SPRING: {
+      name: "Spring",
+      icon: "https://user-images.githubusercontent.com/25181517/117201470-f6d56780-adec-11eb-8f7c-e70e376cfd07.png"
+    },
+    SpringBoot: {
+      name: "Spring Boot",
+      icon: "https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png"
+    }
+  },
+  TESTING: {
     Vitest: {
       name: "Vitest",
       icon: "https://vitest.dev/logo-shadow.svg"
@@ -106,21 +112,17 @@ export const TECH = {
       name: "Mocha",
       icon: "https://user-images.githubusercontent.com/25181517/201476630-f47cfff6-fdee-4ee1-9092-1793b71b1ca3.png"
     },
-    FLASK: {
-      name: "Flask",
-      icon: "https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png"
-    },
     PYTEST: {
       name: "pytest",
       icon: "https://user-images.githubusercontent.com/25181517/184117132-9e89a93b-65fb-47c3-91e7-7d0f99e7c066.png"
     },
-    SPRING: {
-      name: "Spring",
-      icon: "https://user-images.githubusercontent.com/25181517/117201470-f6d56780-adec-11eb-8f7c-e70e376cfd07.png"
+    JUNIT: {
+      name: "Junit",
+      icon: "https://user-images.githubusercontent.com/25181517/117533873-484d4480-afef-11eb-9fad-67c8605e3592.png"
     },
-    SpringBoot: {
-      name: "Spring Boot",
-      icon: "https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png"
+    SELENIUM: {
+      name: "selenium",
+      icon: "https://user-images.githubusercontent.com/25181517/184103699-d1b83c07-2d83-4d99-9a1e-83bd89e08117.png"
     }
   },
   DEVOPS: {
