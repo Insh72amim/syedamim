@@ -16,6 +16,7 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import CodingProfile from "./codingProfile/codingProfile";
 import "./Main.scss";
+import Courses from "./courses/Courses";
 
 const Main = () => {
   console.log();
@@ -55,6 +56,7 @@ const Main = () => {
             <StartupProject />
             <CodingProfile />
             <Achievement />
+            <Courses />
             <TechStack />
             <Profile />
             <Footer />

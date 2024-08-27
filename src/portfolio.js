@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/Insh72amim",
   linkedin: "https://www.linkedin.com/in/syed-amim/",
-  instagram: "https://www.instagram.com/syed_amim/",
+  instagram: "https://www.instagram.com/isyedamim/",
   facebook: "https://www.facebook.com/syed.amim.786",
   gitlab: "https://gitlab.com/amim.insherah",
   twitter: "https://twitter.com/amiminsherah",
