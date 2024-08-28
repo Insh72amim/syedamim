@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
-import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
+import "./MiniProject.scss";
+import {miniProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
-export default function StartupProject() {
+export default function StandardProject() {
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -14,14 +14,14 @@ export default function StartupProject() {
   }
 
   const {isDark} = useContext(StyleContext);
-  if (!bigProjects.display) {
+  if (!miniProjects.display) {
     return null;
   }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading">{miniProjects.title}</h1>
           <p
             className={
               isDark
@@ -29,38 +29,42 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+            {miniProjects.subtitle}
           </p>
 
-          <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
+          <div className="mini-projects-container">
+            {miniProjects.projects.map((project, i) => {
               return (
                 <div
                   key={i}
                   className={
                     isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                      ? "dark-mode mini-project-card-dark mini-project-card"
+                      : "mini-project-card mini-project-card-light"
                   }
                 >
                   {project.image ? (
-                    <div className="project-image">
+                    <div className="mini-project-image">
                       <img
                         src={project.image}
                         alt={project.projectName}
-                        className="card-image"
+                        className="mini-card-image"
                       ></img>
                     </div>
                   ) : null}
                   <div className="project-detail">
                     <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
+                      className={
+                        isDark ? "dark-mode mini-card-title" : "mini-card-title"
+                      }
                     >
                       {project.projectName}
                     </h5>
                     <p
                       className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                        isDark
+                          ? "dark-mode mini-card-subtitle"
+                          : "mini-card-subtitle"
                       }
                     >
                       {project.projectDesc}

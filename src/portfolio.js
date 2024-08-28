@@ -24,7 +24,7 @@ const greeting = {
   username: "Syed Amim",
   title: "Hey, I'm Amim",
   subTitle:
-    "A passionate Full Stack Software Developer having an experience of building Web applications and scalable backends with JavaScript, TypeScript, Nodejs, ExpressJs, NestJs, Reactjs,  and NextJs.",
+    "A passionate Full Stack Software Developer having an experience of building Web applications and scalable backends across multiple tech stacks including Java, SpringBoot, Python, Django, JavaScript, TypeScript, Nodejs, ExpressJs, NestJs, Reactjs,  and NextJs.",
   resumeLink:
     "https://drive.google.com/file/d/1_wr00uhNkuEgKBQsgZmpaZaIsXtf8DNa/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -267,28 +267,29 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "",
   projects: [
     {
       image: require("./assets/images/pgh.png"),
       projectName: "PG Handle",
       projectDesc:
-        "A single place to enroll a guest, manage the stay cycle, bills, notifications and management of guests.",
+        "Web App to enroll a guest, manage the stay cycle, bills, notifications and management of guests. This fullstack web app is developed with NestJs Typescript backend and ReactJs frontend.",
       footerLink: [
         {
           name: "frontend Source Code",
-          url: "https://github.com/Insh72amim/moviemaniaFE"
+          url: "https://github.com/Insh72amim/pghandlefe"
         },
         {
           name: "backend Source Code",
-          url: "https://github.com/Insh72amim/moviemaniaFE"
+          url: "https://github.com/Insh72amim/pghandlebe"
         }
       ]
     },
     {
       image: require("./assets/images/mm.png"),
       projectName: "MovieMania",
-      projectDesc: "A place to review and rate movies and watch trailors.",
+      projectDesc:
+        "A full stack web app to review and rate movies and tv shows and watch their trailors. Developed with Java and SpringBoot backend and ReactJs frontend.",
       footerLink: [
         {
           name: "Source Code",
@@ -300,7 +301,7 @@ const bigProjects = {
       image: require("./assets/images/pharma.png"),
       projectName: "MyPharma",
       projectDesc:
-        "Pharma management system to manage medicines, doctors and patients",
+        "This web app is build using HTML, CSS, Javascript and PHP. Pharma management system to manage medicines, doctors and patients. ",
       footerLink: [
         {
           name: "Source Code",
@@ -312,6 +313,73 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
+const miniProjects = {
+  title: "Mini Projects",
+  subtitle: "List of some useful and cool small projects",
+  projects: [
+    {
+      image: require("./assets/images/mp_ja.jpg"),
+      projectName: "Job AutoFiller",
+      projectDesc:
+        "A python script using selenium which takes a certain job application form and details json and fill all the pages and submit for you.",
+      footerLink: [
+        {
+          name: "source code",
+          url: "https://github.com/Insh72amim/jobautofiller"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/mp_za.png"),
+      projectName: "Meeting Joiner",
+      projectDesc:
+        "A cron job written in Javascript that periodically fetches data from google calendar api and joins the meeting for you.",
+      footerLink: [
+        {
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/meetingjoiner"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/mp_bm.png"),
+      projectName: "Bookmark Mango",
+      projectDesc:
+        "A NestJs based backend that serves multiple apis to provide crud operations to hold bookmark details of a web app.",
+      footerLink: [
+        {
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/BookmarkManager-NestJs"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/mp_chext.jpg"),
+      projectName: "ChromeExtension",
+      projectDesc:
+        "A chrome Extension to show list of LLM Models and navigate to them. This is developed using HTML, CSS and JavaScript",
+      footerLink: [
+        {
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/chrome-ext"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/mp_lk.jpg"),
+      projectName: "Loop Kitchen",
+      projectDesc:
+        "Loop monitors several restaurants on data to check online history. This is build Using NodeJs, ExpressJs and MongoDb",
+      footerLink: [
+        {
+          name: "Source Code",
+          url: "https://github.com/Insh72amim/loop-kitchen"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
 // Achievement Section
 // Include certificates, talks etc
 
@@ -324,7 +392,7 @@ const achievementSection = {
     {
       title: "AWS Developer Associate",
       subtitle:
-        "Passed the AWS Developer Associate Exam. It showcases knowledge and understanding of core AWS services, uses, and basic AWS architecture best practices, and proficiency in developing, deploying, and debugging cloud-based applications by using AWS. .",
+        "It showcases understanding of core AWS services and architecture and proficiency in developing and deploying app using AWS.",
       image: require("./assets/images/awsdva.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -341,7 +409,7 @@ const achievementSection = {
     {
       title: "Storrior Scholar Award",
       subtitle:
-        "Recieved 250USD for completing highest LinkedIn learnign hour in my company storable as we migrated to new Technologies.",
+        "Recieved for completing highest LinkedIn learnign hour in my company storable as we migrated to new Technologies.",
       image: require("./assets/images/storablelearning.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -354,7 +422,7 @@ const achievementSection = {
     {
       title: "Storrior Spotlight Award",
       subtitle:
-        "Recieved 250USD for contribution as a developer and going above and beyond",
+        "Recieved for my efforts as a developer for going above and beyond which reflects dedication and proactiveness in the project.",
       image: require("./assets/images/ssa.jpg"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -492,6 +560,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  miniProjects,
   achievementSection,
   blogSection,
   contactInfo,
