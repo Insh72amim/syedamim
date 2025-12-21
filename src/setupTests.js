@@ -1,5 +1,24 @@
 import "jest-canvas-mock";
-import {configure} from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import "@testing-library/jest-dom";
 
-configure({adapter: new Adapter()});
+jest.mock("colorthief", () => {
+  return {
+    __esModule: true,
+    default: class {
+      getColor() {
+        return [0, 0, 0];
+      }
+      getPalette() {
+        return [[0, 0, 0]];
+      }
+    }
+  };
+});
+
+window.matchMedia = window.matchMedia || function() {
+  return {
+    matches: false,
+    addListener: jest.fn(),
+    removeListener: jest.fn(),
+  };
+};
