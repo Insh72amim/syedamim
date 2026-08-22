@@ -43,7 +43,8 @@ const socialMediaLinks = {
 // Skills Section
 const skillsSection = {
   title: "What do I do ?",
-  subTitle: "ENTERPRISE DISTRIBUTED SYSTEMS, BIG DATA PIPELINES & AI/LLM SOLUTIONS",
+  subTitle:
+    "ENTERPRISE DISTRIBUTED SYSTEMS, BIG DATA PIPELINES & AI/LLM SOLUTIONS",
   skills: [
     "Architect and maintain large-scale compliance and financial data pipelines across Snowflake, APIs, and Data Lakes using Scala, Java, and Parquet/Protobuf.",
     "Build resilient, high-throughput microservices using Spring Boot, NestJS, Node.js, and event-driven architectures with Apache Kafka, Redis, and PostgreSQL/MongoDB.",
@@ -274,7 +275,8 @@ const openSource = {
 // Major Projects
 const bigProjects = {
   title: "Featured Projects",
-  subtitle: "Full-Stack SaaS platforms, high-throughput microservices, and live production ecosystems",
+  subtitle:
+    "Full-Stack SaaS platforms, high-throughput microservices, and live production ecosystems",
   projects: [
     {
       image: require("./assets/images/pgh.png"),

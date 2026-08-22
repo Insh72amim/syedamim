@@ -16,21 +16,18 @@ export default function Courses() {
             <div className="section-eyebrow">CONTINUOUS LEARNING</div>
             <h1
               className={
-                isDark
-                  ? "dark-mode courses-heading"
-                  : "courses-heading"
+                isDark ? "dark-mode courses-heading" : "courses-heading"
               }
             >
               Course Certificates Repository
             </h1>
             <p
               className={
-                isDark
-                  ? "dark-mode courses-subtitle"
-                  : "courses-subtitle"
+                isDark ? "dark-mode courses-subtitle" : "courses-subtitle"
               }
             >
-              Specialized technical certifications and ongoing continuous learning
+              Specialized technical certifications and ongoing continuous
+              learning
             </p>
           </div>
           <iframe

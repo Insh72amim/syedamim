@@ -15,10 +15,12 @@ jest.mock("colorthief", () => {
   };
 });
 
-window.matchMedia = window.matchMedia || function() {
-  return {
-    matches: false,
-    addListener: jest.fn(),
-    removeListener: jest.fn(),
+window.matchMedia =
+  window.matchMedia ||
+  function () {
+    return {
+      matches: false,
+      addListener: jest.fn(),
+      removeListener: jest.fn()
+    };
   };
-};

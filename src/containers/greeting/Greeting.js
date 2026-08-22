@@ -20,11 +20,16 @@ export default function Greeting() {
                 <span className="status-dot"></span>
                 <span>Associate @ Goldman Sachs | 4+ YOE</span>
               </div>
-              <h1 className={isDark ? "dark-mode greeting-title" : "greeting-title"}>
+              <h1
+                className={
+                  isDark ? "dark-mode greeting-title" : "greeting-title"
+                }
+              >
                 Syed Amim
               </h1>
               <h2 className="greeting-role">
-                Senior Software Engineer <span className="gradient-text">@ Goldman Sachs</span>
+                Senior Software Engineer{" "}
+                <span className="gradient-text">@ Goldman Sachs</span>
               </h2>
               <p
                 className={
@@ -59,7 +64,7 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          
+
           <div className="greeting-card-div">
             <div className="terminal-card">
               <div className="terminal-header">
@@ -74,14 +79,37 @@ export default function Greeting() {
               <div className="terminal-body">
                 <pre>
                   <code>
-                    <span className="code-kw">const</span> <span className="code-var">engineer</span> = &#123;{'\n'}
-                    {'  '}<span className="code-key">name</span>: <span className="code-str">"Syed Amim"</span>,{'\n'}
-                    {'  '}<span className="code-key">role</span>: <span className="code-str">"Senior Software Engineer"</span>,{'\n'}
-                    {'  '}<span className="code-key">company</span>: <span className="code-str">"Goldman Sachs"</span>,{'\n'}
-                    {'  '}<span className="code-key">education</span>: <span className="code-str">"B.Tech, IIT Patna"</span>,{'\n'}
-                    {'  '}<span className="code-key">stack</span>: [<span className="code-str">"Java"</span>, <span className="code-str">"Spring Boot"</span>, <span className="code-str">"Scala"</span>, <span className="code-str">"Snowflake"</span>, <span className="code-str">"AWS"</span>],{'\n'}
-                    {'  '}<span className="code-key">aiStack</span>: [<span className="code-str">"LangChain"</span>, <span className="code-str">"GPT-4o"</span>, <span className="code-str">"Claude 3.5"</span>, <span className="code-str">"RAG"</span>],{'\n'}
-                    {'  '}<span className="code-key">certifications</span>: [<span className="code-str">"AWS DVA-C02"</span>]{'\n'}
+                    <span className="code-kw">const</span>{" "}
+                    <span className="code-var">engineer</span> = &#123;{"\n"}
+                    {"  "}
+                    <span className="code-key">name</span>:{" "}
+                    <span className="code-str">"Syed Amim"</span>,{"\n"}
+                    {"  "}
+                    <span className="code-key">role</span>:{" "}
+                    <span className="code-str">"Senior Software Engineer"</span>
+                    ,{"\n"}
+                    {"  "}
+                    <span className="code-key">company</span>:{" "}
+                    <span className="code-str">"Goldman Sachs"</span>,{"\n"}
+                    {"  "}
+                    <span className="code-key">education</span>:{" "}
+                    <span className="code-str">"B.Tech, IIT Patna"</span>,{"\n"}
+                    {"  "}
+                    <span className="code-key">stack</span>: [
+                    <span className="code-str">"Java"</span>,{" "}
+                    <span className="code-str">"Spring Boot"</span>,{" "}
+                    <span className="code-str">"Scala"</span>,{" "}
+                    <span className="code-str">"Snowflake"</span>,{" "}
+                    <span className="code-str">"AWS"</span>],{"\n"}
+                    {"  "}
+                    <span className="code-key">aiStack</span>: [
+                    <span className="code-str">"LangChain"</span>,{" "}
+                    <span className="code-str">"GPT-4o"</span>,{" "}
+                    <span className="code-str">"Claude 3.5"</span>,{" "}
+                    <span className="code-str">"RAG"</span>],{"\n"}
+                    {"  "}
+                    <span className="code-key">certifications</span>: [
+                    <span className="code-str">"AWS DVA-C02"</span>]{"\n"}
                     &#125;;
                   </code>
                 </pre>

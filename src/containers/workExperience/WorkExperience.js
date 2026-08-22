@@ -14,8 +14,15 @@ export default function WorkExperience() {
             <div className="section-header-center">
               <div className="section-eyebrow">CAREER PATH</div>
               <h1 className="experience-heading">Work Experience</h1>
-              <p className={isDark ? "dark-mode experience-subtitle" : "experience-subtitle"}>
-                Engineering high-scale financial distributed systems, microservices &amp; cloud infrastructure
+              <p
+                className={
+                  isDark
+                    ? "dark-mode experience-subtitle"
+                    : "experience-subtitle"
+                }
+              >
+                Engineering high-scale financial distributed systems,
+                microservices &amp; cloud infrastructure
               </p>
             </div>
             <div className="experience-cards-div">

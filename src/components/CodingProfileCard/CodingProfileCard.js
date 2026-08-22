@@ -11,7 +11,9 @@ export default function CodingProfileCard({cardInfo, isDark}) {
   }
 
   return (
-    <div className={isDark ? "dark-mode codingprofile-card" : "codingprofile-card"}>
+    <div
+      className={isDark ? "dark-mode codingprofile-card" : "codingprofile-card"}
+    >
       <div className="codingprofile-top">
         <div className="codingprofile-image-div">
           <img

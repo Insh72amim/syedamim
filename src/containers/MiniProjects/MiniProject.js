@@ -21,7 +21,9 @@ export default function MiniProject() {
       <div className="main" id="miniprojects">
         <div className="section-header-center">
           <div className="section-eyebrow">AUTOMATION &amp; TOOLS</div>
-          <h1 className={isDark ? "dark-mode skills-heading" : "skills-heading"}>
+          <h1
+            className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+          >
             {miniProjects.title}
           </h1>
           <p
@@ -41,9 +43,7 @@ export default function MiniProject() {
               <div
                 key={i}
                 className={
-                  isDark
-                    ? "dark-mode mini-project-card"
-                    : "mini-project-card"
+                  isDark ? "dark-mode mini-project-card" : "mini-project-card"
                 }
               >
                 {project.image ? (
@@ -79,9 +79,7 @@ export default function MiniProject() {
                           <span
                             key={i}
                             className={
-                              isDark
-                                ? "dark-mode project-tag"
-                                : "project-tag"
+                              isDark ? "dark-mode project-tag" : "project-tag"
                             }
                             onClick={() => openUrlInNewTab(link.url)}
                           >

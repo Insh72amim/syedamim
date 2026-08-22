@@ -21,7 +21,9 @@ export default function StandardProject() {
       <div className="main" id="projects">
         <div className="section-header-center">
           <div className="section-eyebrow">PORTFOLIO WORK</div>
-          <h1 className={isDark ? "dark-mode skills-heading" : "skills-heading"}>
+          <h1
+            className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+          >
             {bigProjects.title}
           </h1>
           <p
@@ -75,9 +77,7 @@ export default function StandardProject() {
                           <span
                             key={i}
                             className={
-                              isDark
-                                ? "dark-mode project-tag"
-                                : "project-tag"
+                              isDark ? "dark-mode project-tag" : "project-tag"
                             }
                             onClick={() => openUrlInNewTab(link.url)}
                           >

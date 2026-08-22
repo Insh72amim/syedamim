@@ -16,18 +16,14 @@ export default function Achievement() {
           <div className="section-eyebrow">HONORS &amp; CREDENTIALS</div>
           <h1
             className={
-              isDark
-                ? "dark-mode achievement-heading"
-                : "achievement-heading"
+              isDark ? "dark-mode achievement-heading" : "achievement-heading"
             }
           >
             {achievementSection.title}
           </h1>
           <p
             className={
-              isDark
-                ? "dark-mode achievement-subtitle"
-                : "achievement-subtitle"
+              isDark ? "dark-mode achievement-subtitle" : "achievement-subtitle"
             }
           >
             {achievementSection.subtitle}

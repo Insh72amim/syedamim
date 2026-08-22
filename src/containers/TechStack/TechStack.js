@@ -11,11 +11,20 @@ export default function TechStack() {
         <div className="main" id="techstack">
           <div className="section-header-center">
             <div className="section-eyebrow">TECH ARSENAL</div>
-            <h1 className={isDark ? "dark-mode techstack-heading" : "techstack-heading"}>
+            <h1
+              className={
+                isDark ? "dark-mode techstack-heading" : "techstack-heading"
+              }
+            >
               Technologies &amp; Tools
             </h1>
-            <p className={isDark ? "dark-mode techstack-subtitle" : "techstack-subtitle"}>
-              Comprehensive engineering stack spanning Distributed Systems, AI/LLMs, Cloud &amp; DevOps
+            <p
+              className={
+                isDark ? "dark-mode techstack-subtitle" : "techstack-subtitle"
+              }
+            >
+              Comprehensive engineering stack spanning Distributed Systems,
+              AI/LLMs, Cloud &amp; DevOps
             </p>
           </div>
 
@@ -27,9 +36,14 @@ export default function TechStack() {
                   <div className="techstack-icons-list">
                     {exp.listoftechs.map((tech, idx) => {
                       const icon = typeof tech === "string" ? tech : tech.icon;
-                      const name = typeof tech === "string" ? "Technology" : tech.name;
+                      const name =
+                        typeof tech === "string" ? "Technology" : tech.name;
                       return (
-                        <div key={idx} className="techstack-item-pill" title={name}>
+                        <div
+                          key={idx}
+                          className="techstack-item-pill"
+                          title={name}
+                        >
                           <img
                             src={icon}
                             alt={name}

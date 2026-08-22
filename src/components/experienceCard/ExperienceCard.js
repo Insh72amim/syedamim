@@ -32,7 +32,13 @@ export default function ExperienceCard({cardInfo, isDark}) {
   };
 
   return (
-    <div className={isDark ? "experience-card-dark experience-card-pro" : "experience-card experience-card-pro"}>
+    <div
+      className={
+        isDark
+          ? "experience-card-dark experience-card-pro"
+          : "experience-card experience-card-pro"
+      }
+    >
       <div className="exp-card-header">
         <div className="exp-company-info">
           {cardInfo.companylogo && (
@@ -74,11 +80,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
               const name = typeof tech === "string" ? "Technology" : tech.name;
               return (
                 <div key={idx} className="exp-tech-pill" title={name}>
-                  <img
-                    src={icon}
-                    alt={name}
-                    className="exp-tech-icon"
-                  />
+                  <img src={icon} alt={name} className="exp-tech-icon" />
                   <span className="exp-tech-name">{name}</span>
                 </div>
               );
