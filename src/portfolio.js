@@ -5,6 +5,7 @@ import {TECH} from "./tech";
 import yaftImg from "./assets/images/yaft.svg";
 import knowledgeshelfImg from "./assets/images/knowledgeshelf.svg";
 import localhubImg from "./assets/images/localhub.svg";
+import certificateVaultImg from "./assets/images/certificate_vault.svg";
 
 // Splash Screen
 const splashScreen = {
@@ -481,6 +482,19 @@ const achievementSection = {
         {
           name: "Storable",
           url: "https://www.storable.com/"
+        }
+      ]
+    },
+    {
+      title: "Course Certificates & Credentials Vault",
+      subtitle:
+        "Verified repository of specialized certifications covering Distributed Systems, Cloud Architecture, Java/Spring ecosystems, Microservices, and AI/ML.",
+      image: certificateVaultImg,
+      imageAlt: "Course Certificates Vault",
+      footerLink: [
+        {
+          name: "Open Drive Vault ↗",
+          url: "https://drive.google.com/drive/folders/1h6Yw4udZ4vYqo7INV_RM9SWcTDWHhyJm?usp=sharing"
         }
       ]
     }
