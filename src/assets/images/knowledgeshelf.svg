@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ksBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#ksBg)"/>
+
+  <!-- Title -->
+  <text x="50" y="48" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5">KnowledgeShelf</text>
+  <rect x="230" y="32" width="130" height="22" rx="11" fill="rgba(99,102,241,0.15)" stroke="rgba(99,102,241,0.3)" stroke-width="1"/>
+  <text x="295" y="47" fill="#818cf8" font-family="monospace" font-size="11" font-weight="600" text-anchor="middle">knowledgeshelf.site</text>
+
+  <!-- Interactive Nodes / Graph -->
+  <g stroke="rgba(99,102,241,0.3)" stroke-width="2" stroke-dasharray="4 4">
+    <line x1="140" y1="130" x2="300" y2="100"/>
+    <line x1="300" y1="100" x2="460" y2="130"/>
+    <line x1="140" y1="130" x2="220" y2="210"/>
+    <line x1="300" y1="100" x2="300" y2="210"/>
+    <line x1="460" y1="130" x2="380" y2="210"/>
+    <line x1="220" y1="210" x2="380" y2="210"/>
+  </g>
+
+  <!-- Node Badges -->
+  <rect x="70" y="105" width="140" height="46" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+  <text x="140" y="132" fill="#c7d2fe" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">System Design</text>
+
+  <rect x="230" y="75" width="140" height="46" rx="8" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="300" y="102" fill="#e0e7ff" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">Distributed Systems</text>
+
+  <rect x="390" y="105" width="140" height="46" rx="8" fill="#1e1b4b" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="460" y="132" fill="#fbcfe8" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">Data Engineering</text>
+
+  <rect x="150" y="185" width="140" height="46" rx="8" fill="#1e1b4b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="220" y="212" fill="#bfdbfe" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">DSA &amp; Algos</text>
+
+  <rect x="310" y="185" width="140" height="46" rx="8" fill="#1e1b4b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="380" y="212" fill="#a7f3d0" font-family="monospace" font-size="12" font-weight="600" text-anchor="middle">AI / ML &amp; Quant</text>
+
+  <!-- Footer Info -->
+  <text x="50" y="300" fill="#94a3b8" font-family="monospace" font-size="12">Interactive Technical Learning Engine &amp; Engineering Collection</text>
+</svg>

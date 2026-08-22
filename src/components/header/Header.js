@@ -21,58 +21,58 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
-          <span className="logo-name">{greeting.username}</span>
-        </a>
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-          style={{color: "white"}}
-        >
-          <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
-        </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+        <div className="header-container">
+          <a href="/" className="logo">
+            <span className="logo-name">{greeting.username}</span>
+          </a>
+          <input className="menu-btn" type="checkbox" id="menu-btn" />
+          <label
+            className="menu-icon"
+            htmlFor="menu-btn"
+            style={{color: "white"}}
+          >
+            <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
+          </label>
+          <ul className={isDark ? "dark-menu menu" : "menu"}>
+            {viewSkills && (
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+            )}
+            {viewExperience && (
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+            )}
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#techstack">Tech Stack</a>
             </li>
-          )}
-          {
-            <li>
-              <a href="#education">Education</a>
-            </li>
-          }
-          {viewExperience && (
-            <li>
-              <a href="#experience">Work Experiences</a>
-            </li>
-          )}
-          {viewExperience && (
             <li>
               <a href="#projects">Projects</a>
             </li>
-          )}
-          {viewCodingProfile && (
+            {viewCodingProfile && (
+              <li>
+                <a href="#codingprofile">Coding</a>
+              </li>
+            )}
+            {viewAchievement && (
+              <li>
+                <a href="#achievements">Achievements</a>
+              </li>
+            )}
             <li>
-              <a href="#codingprofile">CodingProfile</a>
+              <a href="#education">Education</a>
             </li>
-          )}
-          {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#contact">Contact</a>
             </li>
-          )}
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
-          </li>
-        </ul>
+            <li>
+              <span className="toggle-menu-link">
+                <ToggleSwitch />
+              </span>
+            </li>
+          </ul>
+        </div>
       </header>
     </Headroom>
   );

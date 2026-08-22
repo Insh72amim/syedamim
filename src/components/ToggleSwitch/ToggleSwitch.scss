@@ -3,13 +3,15 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 26px;
+  width: 52px;
+  height: 28px;
+  vertical-align: middle;
 }
 
-/* Fix visible slider checkbox */
-input {
-  transform: scale(0.5);
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .slider {
@@ -19,91 +21,62 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $toggleSwitchSliderBG;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider::before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 28px;
-  left: 0;
-  bottom: 0;
-  background-color: $textColorDark;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: $toggleCheck;
-}
-
-input:focus + .slider {
-  box-shadow: $toggleCheck;
-}
-
-input:checked + .slider::before,
-input:checked + .slider > .emoji {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.25s ease;
   border-radius: 34px;
   display: flex;
   align-items: center;
 }
 
-.slider.round::before {
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.25s ease;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
-.slider::after {
-  display: inline;
+input:checked + .slider {
+  background-color: #2563eb;
+  border-color: #3b82f6;
+}
+
+input:checked + .slider::before {
+  transform: translateX(22px);
+  background-color: #ffffff;
+  border-color: transparent;
+}
+
+.theme-toggle-icon {
   position: absolute;
-  right: 9.3%;
-  bottom: 17.5%;
-}
-
-input:checked + .slider::after {
-  display: inline;
-  position: absolute;
-  right: 56.3%;
-  bottom: 14.5%;
-}
-
-.emoji {
-  z-index: 10;
+  z-index: 2;
   display: flex;
   align-items: center;
-  margin-left: 2px;
+  justify-content: center;
+  transition: 0.25s ease;
+  pointer-events: none;
+  left: 8px;
 }
 
-@media all and (max-width: 786px) and (min-width: 425px) {
-  input:checked + .slider::after {
-    right: 60.3%;
-    bottom: 20.5%;
-  }
-  .slider::after {
-    right: 15.3%;
-    bottom: 22.5%;
-  }
+input:checked + .slider .theme-toggle-icon {
+  left: 30px;
 }
 
-@media all and (max-width: 2560px) and (min-width: 1552px) {
-  .slider::after {
-    bottom: 12.5% !important;
+body.light-mode {
+  .slider {
+    background-color: #e2e8f0;
+    border-color: #cbd5e1;
   }
-}
-
-@media all and (max-width: 1552px) and (min-width: 1440px) {
-  .slider::after {
-    bottom: 7.5% !important;
+  .slider::before {
+    background-color: #ffffff;
+    border-color: #cbd5e1;
   }
 }

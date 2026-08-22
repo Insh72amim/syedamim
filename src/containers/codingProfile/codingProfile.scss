@@ -1,41 +1,36 @@
 @import "../../_globalColor";
 
-.codingProfile-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem 1rem;
-}
-
 .codingProfile-heading {
-  font-size: 56px;
-  font-weight: 400;
-  line-height: normal;
-  margin: 0px;
-}
-.codingProfile-subtitle {
-  text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 50px;
-}
-.subTitle {
-  color: $subTitle;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  margin: 0 0 8px 0;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .codingProfile-heading {
-    font-size: 40px;
-  }
+.dark-mode .codingProfile-heading {
+  color: #f8fafc;
 }
+
+.codingProfile-subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.dark-mode .codingProfile-subtitle {
+  color: #94a3b8;
+}
+
+.codingProfile-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+
 @media (max-width: 768px) {
   .codingProfile-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .codingProfile-subtitle {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
+    font-size: 1.85rem;
   }
 }

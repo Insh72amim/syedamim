@@ -1,47 +1,102 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
-  border: solid 1px $buttonColor;
-  color: $textColorDark;
-  font-weight: 700;
-  width: max-content;
-  padding: 13px 22px;
-  margin-right: 50px;
-  text-transform: uppercase;
-  border-radius: 6px;
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 10px 20px;
+  border-radius: 8px;
   text-align: center;
   text-decoration: none;
-  display: block;
-  margin-top: 20px;
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.35);
+  transition: all 0.25s ease;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
+
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
-  transform: translateY(-3px);
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+  box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+  color: #ffffff !important;
 }
+
+/* Secondary / Outline Button */
+.main-button.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  color: #3b82f6 !important;
+  box-shadow: none;
+}
+
+.main-button.btn-outline:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+  color: #60a5fa !important;
+}
+
+/* Live Hub Button */
+.main-button.btn-hub {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #34d399 !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+}
+
+.main-button.btn-hub:hover {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: #10b981;
+  transform: translateY(-2px);
+  color: #6ee7b7 !important;
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.28);
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+  .main-button.btn-outline {
+    border-color: #bfdbfe;
+    color: #1d4ed8 !important;
+    background: #eff6ff;
+  }
+
+  .main-button.btn-outline:hover {
+    background: #dbeafe;
+    border-color: #3b82f6;
+  }
+
+  .main-button.btn-hub {
+    background: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #059669 !important;
+  }
+
+  .main-button.btn-hub:hover {
+    background: #d1fae5;
+    border-color: #10b981;
+    color: #047857 !important;
+  }
+}
+
 .project-button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 24px;
 }
-.project-button > .main-button {
-  margin-right: 0 !important;
-}
-/* Media Query */
+
 @media (max-width: 768px) {
   .main-button {
-    font-size: 0.938rem;
-    padding: 12px 18px;
-    margin-right: 0px;
-  }
-}
-@media (max-width: 320px) {
-  .main-button {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    padding: 8px 16px;
   }
 }

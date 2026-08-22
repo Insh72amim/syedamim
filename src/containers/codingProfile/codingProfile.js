@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import "./codingProfile.scss";
 import {codingProfile} from "../../portfolio";
-import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import CodingProfileCard from "../../components/CodingProfileCard/CodingProfileCard";
 
@@ -12,14 +11,15 @@ export default function CodingProfile() {
   }
 
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <div className="animate-fade-in">
       <div className="main" id="codingprofile">
-        <div className="codingProfile-header">
+        <div className="section-header-center">
+          <div className="section-eyebrow">PROBLEM SOLVING</div>
           <h1
             className={
               isDark
-                ? "dark-mode heading codingProfile-heading"
-                : "heading codingProfile-heading"
+                ? "dark-mode codingProfile-heading"
+                : "codingProfile-heading"
             }
           >
             {codingProfile.title}
@@ -27,8 +27,8 @@ export default function CodingProfile() {
           <p
             className={
               isDark
-                ? "dark-mode subTitle codingProfile-subtitle"
-                : "subTitle codingProfile-subtitle"
+                ? "dark-mode codingProfile-subtitle"
+                : "codingProfile-subtitle"
             }
           >
             {codingProfile.subtitle}
@@ -53,6 +53,6 @@ export default function CodingProfile() {
           })}
         </div>
       </div>
-    </Fade>
+    </div>
   );
 }

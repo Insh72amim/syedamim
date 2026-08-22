@@ -1,30 +1,96 @@
 @import "./globalColor";
 
 .App {
-  text-align: center;
   width: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: $appHeaderBG;
+.app-root {
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(0.625rem + 2vmin);
-  color: $textColorDark;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.App-link {
-  color: $appLink;
+body.dark-mode,
+.dark-mode.app-root {
+  background-color: #0b0f19;
+  color: #f8fafc;
+}
+
+body.light-mode,
+.light-mode.app-root {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Global Section Container System */
+.main,
+.greet-main,
+.education-section,
+.techstack-main,
+.experience-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto !important;
+  padding: 60px 24px !important;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1280px) {
+  .main,
+  .greet-main,
+  .education-section,
+  .techstack-main,
+  .experience-container {
+    max-width: 1180px;
+    padding: 70px 28px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main,
+  .greet-main,
+  .education-section,
+  .techstack-main,
+  .experience-container {
+    padding: 40px 16px !important;
+  }
 }
 
 .subTitle {
-  color: $subTitle;
+  color: #64748b;
+}
+
+.dark-mode .subTitle {
+  color: #94a3b8 !important;
+}
+
+/* Standardized Section Eyebrows & Headings */
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 9999px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #60a5fa;
+  margin-bottom: 12px;
+}
+
+body.light-mode .section-eyebrow {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.section-header-center {
+  text-align: center;
+  margin-bottom: 36px;
 }

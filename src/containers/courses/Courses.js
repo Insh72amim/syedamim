@@ -1,48 +1,45 @@
 import React, {useContext} from "react";
 import "./Course.scss";
-import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {coursesSection} from "../../portfolio";
 
 export default function Courses() {
   const {isDark} = useContext(StyleContext);
+  if (!coursesSection || !coursesSection.display) {
+    return null;
+  }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <div className="animate-fade-in">
       <div className="main" id="courses">
-        <div className="achievement-main-div">
-          <div className="achievement-header">
+        <div className="courses-main-div">
+          <div className="section-header-center">
+            <div className="section-eyebrow">CONTINUOUS LEARNING</div>
             <h1
               className={
                 isDark
-                  ? "dark-mode heading achievement-heading"
-                  : "heading achievement-heading"
+                  ? "dark-mode courses-heading"
+                  : "courses-heading"
               }
             >
-              Course Completion Certificates
+              Course Certificates Repository
             </h1>
             <p
               className={
                 isDark
-                  ? "dark-mode subTitle achievement-subtitle"
-                  : "subTitle achievement-subtitle"
+                  ? "dark-mode courses-subtitle"
+                  : "courses-subtitle"
               }
             >
-              List of online course certificates :)
+              Specialized technical certifications and ongoing continuous learning
             </p>
           </div>
           <iframe
             title="Course Completion Certificates"
-            className="achievement-cards-div"
+            className="courses-iframe"
             src="https://drive.google.com/embeddedfolderview?id=1h6Yw4udZ4vYqo7INV_RM9SWcTDWHhyJm#grid"
-            style={{
-              width: "100%",
-              height: "280px",
-              border: "1px solid rgba(211, 211, 211, 0.397)",
-              borderRadius: "4px",
-              boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px" // Replace with the actual value of $lightBoxShadowDark
-            }}
           ></iframe>
         </div>
       </div>
-    </Fade>
+    </div>
   );
 }

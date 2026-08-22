@@ -1,10 +1,16 @@
 import React from "react";
 import "./Button.scss";
 
-export default function Button({text, className, href, newTab}) {
+export default function Button({text, className, href, newTab, variant}) {
+  const btnClass = variant ? `main-button btn-${variant}` : "main-button";
   return (
     <div className={className}>
-      <a className="main-button" href={href} target={newTab && "_blank"}>
+      <a
+        className={btnClass}
+        href={href}
+        target={newTab ? "_blank" : undefined}
+        rel={newTab ? "noopener noreferrer" : undefined}
+      >
         {text}
       </a>
     </div>

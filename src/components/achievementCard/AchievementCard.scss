@@ -1,77 +1,163 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
-}
-.card-title {
-  color: $titleColor;
-  font-size: 1.375rem;
-  line-height: 24px;
-  font-weight: 700;
-  margin: 15px 0 0 0;
-}
-.card-subtitle {
-  color: $cardSubtitle;
-  font-size: 1.063rem;
-  line-height: 1.5rem;
-}
-.certificate-card {
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.certificate-detail-div {
-  text-align: center;
-}
-.certificate-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.dark-mode.certificate-card:hover {
-  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
-}
-.certificate-image-div {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .achievement-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
 }
-.certificate-card-footer {
+
+.achievement-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.dark-mode .achievement-heading {
+  color: #f8fafc;
+}
+
+.achievement-subtitle {
+  font-size: 1.05rem;
+  color: #64748b;
+  text-align: center;
+  margin: 0;
+}
+
+.dark-mode .achievement-subtitle {
+  color: #94a3b8;
+}
+
+/* Certificate Card */
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.certificate-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px -8px rgba(59, 130, 246, 0.15);
+}
+
+.certificate-image-div {
+  width: 100%;
+  height: 180px;
+  background: #0f172a;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.certificate-image-div .card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.certificate-detail-div {
+  padding: 20px;
+  flex: 1;
+}
+
+.certificate-detail-div .card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 10px 0;
+}
+
+.certificate-detail-div .card-subtitle {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.certificate-card-footer {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: auto;
 }
-.certificate-card-footer span.certificate-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
-  vertical-align: middle;
-  align-items: center;
-  border-radius: 4px;
+
+.certificate-tag {
   display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
-  justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 6px 12px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.2s ease-in;
+  transition: all 0.2s ease;
 }
-span.certificate-tag:hover {
-  background: $buttonHover;
+
+.certificate-tag:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
+  color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+/* Light Theme Overrides */
+body.light-mode {
+  .certificate-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+
+  .certificate-card:hover {
+    border-color: #3b82f6;
+  }
+
+  .certificate-image-div {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .certificate-detail-div .card-title {
+    color: #0f172a;
+  }
+
+  .certificate-detail-div .card-subtitle {
+    color: #475569;
+  }
+
+  .certificate-card-footer {
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .certificate-tag {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1d4ed8;
+  }
+
+  .certificate-tag:hover {
+    background: #dbeafe;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievement-heading {
+    font-size: 2rem;
+  }
 }

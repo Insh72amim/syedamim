@@ -1,15 +1,29 @@
 @import "../../_globalColor";
 
+.footer-div {
+  margin-top: 60px;
+  padding: 30px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .footer-text {
   text-align: center;
-  color: $subTitle !important;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  color: #64748b !important;
+  margin: 0;
 }
 
-.dark-mode {
-  color: $textColorDark !important;
+.footer-text a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.footer-div {
-  margin-top: 2rem;
-  padding-bottom: 1rem;
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+body.light-mode .footer-div {
+  border-top: 1px solid #e2e8f0;
 }

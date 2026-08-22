@@ -20,7 +20,6 @@ import Courses from "./courses/Courses";
 import MiniProject from "./MiniProjects/MiniProject";
 
 const Main = () => {
-  console.log();
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
@@ -38,12 +37,22 @@ const Main = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    } else {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    }
+  }, [isDark]);
+
   const changeTheme = () => {
     setIsDark(!isDark);
   };
 
   return (
-    <div className={isDark ? "dark-mode" : null}>
+    <div className={isDark ? "dark-mode app-root" : "light-mode app-root"}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
@@ -52,14 +61,14 @@ const Main = () => {
             <Header />
             <Greeting />
             <Skills />
-            <Education />
             <WorkExperience />
+            <TechStack />
             <StandardProject />
             <MiniProject />
             <CodingProfile />
             <Achievement />
+            <Education />
             <Courses />
-            <TechStack />
             <Profile />
             <Footer />
             <ScrollToTopButton />

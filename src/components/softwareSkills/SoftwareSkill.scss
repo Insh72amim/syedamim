@@ -1,31 +1,85 @@
 @import "../../_globalColor";
 
+.software-skills-main-div {
+  margin: 10px 0;
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 10px 14px;
+  min-width: 68px;
+  transition: all 0.2s ease;
+}
+
+.software-skill-inline:hover {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.35);
+  transform: translateY(-2px);
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  color: #94a3b8;
+  font-size: 1.6rem;
+  transition: color 0.2s ease;
 }
 
-.software-skill-inline > i:hover {
-  color: $skillsColor;
+.software-skill-inline:hover > i {
+  color: #60a5fa;
 }
+
 .software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
+  color: #94a3b8;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 6px 0 0 0;
+  transition: color 0.2s ease;
 }
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+
+.software-skill-inline:hover > p {
+  color: #f8fafc;
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+  .software-skill-inline {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+  }
+
+  .software-skill-inline:hover {
+    background: #eff6ff;
+    border-color: #93c5fd;
+  }
+
+  .software-skill-inline > i {
+    color: #475569;
+  }
+
+  .software-skill-inline:hover > i {
+    color: #2563eb;
+  }
+
+  .software-skill-inline > p {
+    color: #64748b;
+  }
+
+  .software-skill-inline:hover > p {
+    color: #0f172a;
+  }
 }
