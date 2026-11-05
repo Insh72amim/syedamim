@@ -26,8 +26,22 @@ export default function socialMedia() {
           className="icon-button linkedin"
           target="_blank"
           rel="noopener noreferrer"
+          title="LinkedIn"
         >
           <i className="fab fa-linkedin-in"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.goodreads ? (
+        <a
+          href={socialMediaLinks.goodreads}
+          className="icon-button goodreads"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Goodreads Bookshelf"
+        >
+          <i className="fab fa-goodreads-g"></i>
           <span></span>
         </a>
       ) : null}

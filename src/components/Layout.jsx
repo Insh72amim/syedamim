@@ -359,7 +359,7 @@ const Layout = () => {
             }}
             className="flex items-center gap-2.5 hover:opacity-90 transition-opacity"
           >
-            <img src="/logo.png" alt="Logo" className="w-7 h-7 rounded-lg" />
+            <img src="/favicon.svg" alt="Logo" className="w-7 h-7 rounded-lg" />
             <div>
               <h1 className="text-base font-bold leading-tight text-white">
                 Syed Amim
@@ -595,7 +595,7 @@ const Layout = () => {
               to="/"
               className="flex items-center gap-2 px-2 py-1 rounded-xl"
             >
-              <img src="/logo.png" alt="Logo" className="w-6 h-6 rounded-md" />
+              <img src="/favicon.svg" alt="Logo" className="w-6 h-6 rounded-md" />
               <span className="text-sm font-bold text-white">Syed Amim</span>
             </Link>
 

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#090d16"/>
+  <rect width="62" height="62" x="1" y="1" rx="15" stroke="#1e293b" stroke-width="1.5"/>
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="gold-glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Subtle Golden Glow -->
+  <g opacity="0.35" stroke="url(#gold-grad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#gold-glow)">
+    <!-- Open Book Pages -->
+    <path d="M12 24C12 21.5 18 20 26 21.5C29 22 31 23.5 32 25C33 23.5 35 22 38 21.5C46 20 52 21.5 52 24V46C52 44 46 42.5 38 44C35 44.5 33 46 32 47.5C31 46 29 44.5 26 44C18 42.5 12 44 12 46V24Z"/>
+    <!-- Knowledge Spark / Star above Book -->
+    <path d="M32 10L34 15L39 17L34 19L32 24L30 19L25 17L30 15L32 10Z"/>
+  </g>
+
+  <!-- Crisp Golden Foreground Vector -->
+  <g stroke="url(#gold-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Open Book Left & Right Wings -->
+    <path d="M12 24C12 21.5 18 20 26 21.5C29 22 31 23.5 32 25C33 23.5 35 22 38 21.5C46 20 52 21.5 52 24V46C52 44 46 42.5 38 44C35 44.5 33 46 32 47.5C31 46 29 44.5 26 44C18 42.5 12 44 12 46V24Z" fill="rgba(245, 158, 11, 0.14)"/>
+    <!-- Center Spine -->
+    <line x1="32" y1="25" x2="32" y2="47.5"/>
+    <!-- Knowledge Spark / Beacon -->
+    <path d="M32 9L34.2 14.3L39.5 16.5L34.2 18.7L32 24L29.8 18.7L24.5 16.5L29.8 14.3L32 9Z" fill="#fde047" stroke-width="1.8"/>
+  </g>
+</svg>
