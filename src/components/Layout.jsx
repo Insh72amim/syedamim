@@ -28,8 +28,7 @@ const PORTFOLIO_SECTIONS = [
   { id: "skills", name: "Core Capabilities", icon: Sparkles },
   { id: "experience", name: "Work Experience", icon: Briefcase },
   { id: "techstack", name: "Tech Arsenal", icon: Cpu },
-  { id: "projects", name: "Featured Projects", icon: FolderGit2 },
-  { id: "miniprojects", name: "Mini Projects", icon: Wrench },
+  { id: "projects", name: "Projects", icon: FolderGit2 },
   { id: "codingprofile", name: "Coding Profiles", icon: Code2 },
   { id: "achievements", name: "Achievements", icon: Award },
   { id: "education", name: "Education", icon: GraduationCap },
@@ -430,71 +429,31 @@ const Layout = () => {
 
       {/* Scrollable Unified Navigation */}
       <nav className="flex-1 px-4 py-3 space-y-2 overflow-y-auto custom-scrollbar">
-        {/* 1. TOP ITEM: PORTFOLIO (Opened by default) */}
-        <div className="mb-4">
-          <button
-            onClick={() => {
-              if (!isPortfolioRoute) {
-                navigate("/");
-                setIsPortfolioExpanded(true);
-              } else {
-                setIsPortfolioExpanded((prev) => !prev);
-              }
-            }}
-            className={`w-full flex items-center justify-between px-4 py-3 rounded-lg transition-all hover:bg-blue-900/50 ${
-              isPortfolioRoute || isPortfolioExpanded
-                ? "bg-blue-900/30 border border-blue-700/50"
-                : "text-gray-300"
-            }`}
-          >
-            <div className="flex items-center gap-3">
-              <User
-                size={20}
-                className={
-                  isPortfolioRoute || isPortfolioExpanded
-                    ? "text-blue-400"
-                    : ""
-                }
-              />
-              <span className="font-semibold text-sm text-white">
-                Portfolio
-              </span>
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">
-                Me
-              </span>
-            </div>
-            {isPortfolioExpanded ? (
-              <ChevronDown size={16} />
-            ) : (
-              <ChevronRight size={16} />
-            )}
-          </button>
-
-          {isPortfolioExpanded && (
-            <div className="ml-3 mt-2 space-y-1 border-l-2 border-blue-700/40 pl-3">
-              {PORTFOLIO_SECTIONS.map((sec) => {
-                const SecIcon = sec.icon;
-                const isSecActive =
-                  isPortfolioRoute && activePortfolioSection === sec.id;
-                return (
-                  <button
-                    key={sec.id}
-                    type="button"
-                    onClick={() => handlePortfolioSectionClick(sec.id)}
-                    className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-md text-sm text-left transition-colors ${
-                      isSecActive
-                        ? "bg-blue-900/40 text-blue-400 font-medium"
-                        : "text-gray-400 hover:text-white hover:bg-gray-700/70"
-                    }`}
-                  >
-                    <SecIcon size={15} className="flex-shrink-0" />
-                    <span className="truncate">{sec.name}</span>
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
+        {/* 1. TOP ITEM: PORTFOLIO (Direct link, non-expandable) */}
+        <Link
+          to="/"
+          onClick={() => {
+            if (isMobile) setMobileSidebarOpen(false);
+            const scrollEl = document.getElementById("main-scroll-container");
+            if (scrollEl) {
+              scrollEl.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+          className={`flex items-center gap-3 px-4 py-3 mb-2 rounded-lg transition-all hover:bg-blue-900/50 ${
+            isPortfolioRoute
+              ? "bg-blue-900/30 border border-blue-700/50 text-blue-400"
+              : "text-gray-300"
+          }`}
+        >
+          <User
+            size={20}
+            className={isPortfolioRoute ? "text-blue-400" : ""}
+          />
+          <span className="font-semibold text-sm text-white">Portfolio</span>
+          <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-400 border border-blue-500/30">
+            Me
+          </span>
+        </Link>
 
         {/* Divider for KnowledgeShelf */}
         <div className="pt-2 pb-1 px-2 flex items-center justify-between">
@@ -666,6 +625,34 @@ const Layout = () => {
             </button>
           </div>
         )}
+
+        {/* Top Section Navigation Bar on Portfolio Page */}
+        {isPortfolioRoute && (
+          <div className="sticky top-0 lg:top-0 z-20 border-b border-gray-800/80 bg-gray-900/90 backdrop-blur-md">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+              {PORTFOLIO_SECTIONS.map((sec) => {
+                const SecIcon = sec.icon;
+                const isSecActive = activePortfolioSection === sec.id;
+                return (
+                  <button
+                    key={sec.id}
+                    type="button"
+                    onClick={() => handlePortfolioSectionClick(sec.id)}
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all ${
+                      isSecActive
+                        ? "bg-blue-900/40 text-blue-400 border border-blue-700/50"
+                        : "text-gray-400 hover:text-white hover:bg-gray-800"
+                    }`}
+                  >
+                    <SecIcon size={13} className="flex-shrink-0" />
+                    <span>{sec.name}</span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         <Outlet />
       </div>
       <SearchModal

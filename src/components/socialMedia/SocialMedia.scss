@@ -9,6 +9,8 @@
 
 .icon-button {
   text-decoration: none;
+  display: inline-flex;
+  border-radius: 10px;
 }
 
 .icon-button i {
@@ -22,67 +24,76 @@
   width: 40px;
   height: 40px;
   transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background-clip: padding-box;
-  overflow: hidden;
+  border: none;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
 }
 
 /* Official Brand Colors Always On */
 .github i {
   background: linear-gradient(135deg, #24292e 0%, #111418 100%);
-  box-shadow: 0 3px 10px rgba(36, 41, 46, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(36, 41, 46, 0.35);
 }
 
 .linkedin i {
   background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
-  box-shadow: 0 3px 10px rgba(10, 102, 194, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(10, 102, 194, 0.35);
 }
 
 .google i {
   background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%);
-  box-shadow: 0 3px 10px rgba(234, 67, 53, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(234, 67, 53, 0.35);
 }
 
 .gitlab i {
   background: linear-gradient(135deg, #fc6d26 0%, #e24329 100%);
-  box-shadow: 0 3px 10px rgba(252, 109, 38, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(252, 109, 38, 0.35);
 }
 
 .facebook i {
   background: linear-gradient(135deg, #1877f2 0%, #0c5dc7 100%);
-  box-shadow: 0 3px 10px rgba(24, 119, 242, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(24, 119, 242, 0.35);
 }
 
 .instagram i {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
   );
-  box-shadow: 0 3px 10px rgba(214, 36, 159, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(220, 39, 67, 0.35);
 }
 
 .twitter i {
   background: linear-gradient(135deg, #1da1f2 0%, #0d8bd9 100%);
-  box-shadow: 0 3px 10px rgba(29, 161, 242, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(29, 161, 242, 0.35);
 }
 
 .medium i {
   background: linear-gradient(135deg, #12100e 0%, #292524 100%);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(0, 0, 0, 0.35);
 }
 
 .stack-overflow i {
   background: linear-gradient(135deg, #f48024 0%, #d66811 100%);
-  box-shadow: 0 3px 10px rgba(244, 128, 36, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(244, 128, 36, 0.35);
 }
 
 .kaggle i {
   background: linear-gradient(135deg, #20beff 0%, #0ea5e9 100%);
-  box-shadow: 0 3px 10px rgba(32, 190, 255, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 3px 10px rgba(32, 190, 255, 0.35);
 }
 
 .icon-button i:hover {
@@ -93,6 +104,6 @@
 /* Light Mode Refinements */
 body.light-mode {
   .icon-button i {
-    border-color: rgba(15, 23, 42, 0.08);
+    border: none;
   }
 }

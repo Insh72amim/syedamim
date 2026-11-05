@@ -201,8 +201,7 @@ const workExperiences = {
         "Standardized heterogeneous multi-asset trade data (**futures, equities, FICC cuts**) into structured **Parquet** and **Protocol Buffers (Protobuf)** formats for unified compliance surveillance.",
         "Engineered transformation and data enrichment workflows utilizing **Scala**, **Java**, **Snowflake**, and **Presto**, ensuring high-integrity auditability across trade lifecycles.",
         "Migrated equities ingestion from fragmented source feeds to a centralized **EDM Web API pull** backed by **GBM Snowflake APIs**, improving pipeline reliability and data freshness.",
-        "Partnered with **AWM**, **GBM**, and **Compliance stakeholders** to onboard schema updates, resolve ingestion bottlenecks, and harden surveillance datasets.",
-        "Tech Stack: **Scala**, **Java**, **Snowflake**, **Presto**, **Data Lake**, **Parquet**, **Protocol Buffers**, **REST APIs**, **Python**, **AWS**"
+        "Partnered with **AWM**, **GBM**, and **Compliance stakeholders** to onboard schema updates, resolve ingestion bottlenecks, and harden surveillance datasets."
       ],
       techStack: [
         TECH.PROGRAMMINGLANG.JAVA,
@@ -226,8 +225,7 @@ const workExperiences = {
         "Spearheaded development of a high-throughput insurance platform for **20 million tenants**, enabling real-time policy search, enrollment, and automated certificate generation using **Spring Boot**, **Hibernate**, **PostgreSQL**, **Redis**, and **AWS**, doubling operational efficiency.",
         "Architected a scheduler-driven synchronization engine executing **30+ background cron tasks** across **Zoho**, facility management systems, and third-party insurance carriers with idempotent audit trails.",
         "Built event-driven **Apache Kafka** messaging workflows and self-service enrollment portals, eliminating data drift and driving a **20% revenue boost**.",
-        "Migrated enterprise telemetry from Datadog to **Bugsnag** and **Grafana**, while managing containerized deployments on **AWS EKS**, **Kubernetes**, and **Elastic Beanstalk** across **10+ microservices**.",
-        "Tech Stack: **Spring Boot**, **Hibernate**, **Java**, **TypeScript**, **NestJS**, **PostgreSQL**, **Redis**, **Kafka**, **AWS EKS**, **Kubernetes**, **Bugsnag**, **Grafana**"
+        "Migrated enterprise telemetry from Datadog to **Bugsnag** and **Grafana**, while managing containerized deployments on **AWS EKS**, **Kubernetes**, and **Elastic Beanstalk** across **10+ microservices**."
       ],
       techStack: [
         TECH.BACKEND.SpringBoot,
@@ -251,8 +249,7 @@ const workExperiences = {
       descBullets: [
         "Designed and launched an interactive student onboarding module using **Spring Boot**, **Spring Data MongoDB**, **React**, and **Redux**, increasing feature adoption by **60%** and reducing support tickets by **40%**.",
         "Architected **25+ production REST APIs** handling over **50,000 RPM**, optimized with **MongoDB composite indexing**, **Redis caching layers**, and **Spring AOP logging**.",
-        "Configured automated **CI/CD pipelines** using **Argo CD** and **Argo Workflows**, migrating containerized services from **AWS ECS** to **AWS EKS** with robust **JWT Spring Security**.",
-        "Tech Stack: **Java**, **Spring Boot**, **Spring Security**, **MongoDB**, **Redis**, **React**, **Redux**, **AWS EKS**, **Argo CD**, **Docker**"
+        "Configured automated **CI/CD pipelines** using **Argo CD** and **Argo Workflows**, migrating containerized services from **AWS ECS** to **AWS EKS** with robust **JWT Spring Security**."
       ],
       techStack: [
         TECH.PROGRAMMINGLANG.JAVA,
@@ -274,8 +271,7 @@ const workExperiences = {
       desc: "Engineered dynamic question management services and test suites for adaptive learning platforms.",
       descBullets: [
         "Developed high-performance **REST APIs** using **Python** and **Flask** to dynamically query and serve structured learning datasets.",
-        "Implemented comprehensive automated test suites with **Pytest**, achieving **>90% code coverage** and improving CI reliability.",
-        "Tech Stack: **Python**, **Flask**, **Pytest**, **REST APIs**"
+        "Implemented comprehensive automated test suites with **Pytest**, achieving **>90% code coverage** and improving CI reliability."
       ],
       techStack: [
         TECH.PROGRAMMINGLANG.PYTHON,
@@ -294,9 +290,9 @@ const openSource = {
 
 // Major Projects
 const bigProjects = {
-  title: "Featured Projects",
+  title: "Projects",
   subtitle:
-    "Full-Stack SaaS platforms, high-throughput microservices, and live production ecosystems",
+    "Full-Stack SaaS platforms, high-throughput microservices, developer ecosystems, and automation tools",
   projects: [
     {
       image: pghImg,
@@ -394,15 +390,7 @@ const bigProjects = {
           url: "https://github.com/Insh72amim/moviemaniaFE"
         }
       ]
-    }
-  ],
-  display: true
-};
-
-const miniProjects = {
-  title: "Mini Projects & Automation",
-  subtitle: "Productivity automations, intelligent scrapers, and micro-tools",
-  projects: [
+    },
     {
       image: mpJaImg,
       projectName: "Job AutoFiller",
@@ -453,6 +441,13 @@ const miniProjects = {
     }
   ],
   display: true
+};
+
+const miniProjects = {
+  title: "Mini Projects & Automation",
+  subtitle: "Productivity automations, intelligent scrapers, and micro-tools",
+  projects: [],
+  display: false
 };
 
 // Achievement Section
