@@ -1,11 +1,29 @@
 /* Personal Portfolio Data for Syed Amim */
 
-import splashAnimation from "./assets/lottie/splashAnimation";
+import splashAnimation from "./assets/lottie/splashAnimation.json";
 import {TECH} from "./tech";
 import yaftImg from "./assets/images/yaft.svg";
 import knowledgeshelfImg from "./assets/images/knowledgeshelf.svg";
 import localhubImg from "./assets/images/localhub.svg";
 import certificateVaultImg from "./assets/images/certificate_vault.svg";
+import iitpImg from "./assets/images/iitp.png";
+import cbseImg from "./assets/images/cbse.png";
+import goldmanSachsImg from "./assets/images/goldmansachs.png";
+import storableImg from "./assets/images/storable.png";
+import byjusImg from "./assets/images/byjus.png";
+import bytelearnImg from "./assets/images/bytelearn.png";
+import pghImg from "./assets/images/pgh.png";
+import mpChextImg from "./assets/images/mp_chext.jpg";
+import mmImg from "./assets/images/mm.png";
+import mpJaImg from "./assets/images/mp_ja.jpg";
+import mpZaImg from "./assets/images/mp_za.png";
+import mpBmImg from "./assets/images/mp_bm.png";
+import mpLkImg from "./assets/images/mp_lk.jpg";
+import awsdvaImg from "./assets/images/awsdva.png";
+import storableLearningImg from "./assets/images/storablelearning.png";
+import ssaImg from "./assets/images/ssa.jpg";
+import codeforcesImg from "./assets/images/codeforces.png";
+import codechefImg from "./assets/images/codechef.png";
 
 // Splash Screen
 const splashScreen = {
@@ -27,6 +45,7 @@ const greeting = {
   resumeLink:
     "https://drive.google.com/file/d/1_wr00uhNkuEgKBQsgZmpaZaIsXtf8DNa/view",
   hubLink: "https://localhub.site",
+  shelfLink: "/shelf",
   displayGreeting: true
 };
 
@@ -102,7 +121,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Indian Institute of Technology, Patna",
-      logo: require("./assets/images/iitp.png"),
+      logo: iitpImg,
       subHeader: "Bachelor of Technology (B.Tech)",
       duration: "Aug 2018 - May 2022",
       desc: "Relevant Coursework: CS102 Programming and Data Structures, CS244 Data Science, CS384 Python, Algorithms & Systems",
@@ -110,7 +129,7 @@ const educationInfo = {
     },
     {
       schoolName: "Rose Public School, CBSE",
-      logo: require("./assets/images/cbse.png"),
+      logo: cbseImg,
       subHeader: "Senior Secondary",
       duration: "May 2015 - April 2017",
       desc: "",
@@ -174,7 +193,7 @@ const workExperiences = {
     {
       role: "Associate, Compliance Division ‑ Team Nile",
       company: "Goldman Sachs",
-      companylogo: require("./assets/images/goldmansachs.png"),
+      companylogo: goldmanSachsImg,
       date: "Aug 2025 – Present",
       desc: "Building and maintaining **large-scale compliance data pipelines** for **Team Nile**, ingesting **AWM and GBM trade data** across **REST APIs**, **Snowflake**, and **Data Lakes** for global trade surveillance.",
       descBullets: [
@@ -200,7 +219,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Storable",
-      companylogo: require("./assets/images/storable.png"),
+      companylogo: storableImg,
       date: "Apr 2023 – Aug 2025",
       desc: "Led backend engineering of core **insurance data platform** serving **20M+ tenants**, automated cron synchronizations, and event-driven microservices.",
       descBullets: [
@@ -226,7 +245,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "BYJU'S",
-      companylogo: require("./assets/images/byjus.png"),
+      companylogo: byjusImg,
       date: "June 2022 – March 2023",
       desc: "Engineered scalable student onboarding and engagement backend microservices handling high-concurrency production workloads.",
       descBullets: [
@@ -250,7 +269,7 @@ const workExperiences = {
     {
       role: "Software Engineer Intern",
       company: "Bytelearn",
-      companylogo: require("./assets/images/bytelearn.png"),
+      companylogo: bytelearnImg,
       date: "Nov 2021 – Dec 2021",
       desc: "Engineered dynamic question management services and test suites for adaptive learning platforms.",
       descBullets: [
@@ -280,7 +299,7 @@ const bigProjects = {
     "Full-Stack SaaS platforms, high-throughput microservices, and live production ecosystems",
   projects: [
     {
-      image: require("./assets/images/pgh.png"),
+      image: pghImg,
       projectName: "PGHandle Ecosystem & Property Cloud",
       projectDesc:
         "Complete enterprise property management SaaS featuring an Owner Console, Resident Guest Portal, automated billing, digital KYC, and tenant marketplace. Built with NestJS, TypeScript, React, PostgreSQL, and AWS.",
@@ -326,8 +345,9 @@ const bigProjects = {
         "Interactive technical learning engine and engineering collection covering System Design (DDIA), Distributed Systems, Data Engineering, DSA, Quantitative Finance, and Machine Learning.",
       footerLink: [
         {
-          name: "Live Site",
-          url: "https://knowledgeshelf.site/"
+          name: "Open KnowledgeShelf",
+          url: "/shelf",
+          internal: true
         },
         {
           name: "Source Code",
@@ -347,12 +367,12 @@ const bigProjects = {
         },
         {
           name: "Source Code",
-          url: "https://github.com/Insh72amim/mylocal"
+          url: "https://github.com/Insh72amim/localhub"
         }
       ]
     },
     {
-      image: require("./assets/images/mp_chext.jpg"),
+      image: mpChextImg,
       projectName: "AI LLM Navigator & Chrome Extension",
       projectDesc:
         "A smart browser extension designed to navigate and orchestrate multi-model LLM workflows (OpenAI, Claude, Gemini), organize custom prompts, and streamline AI interactions in real-time.",
@@ -364,7 +384,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/mm.png"),
+      image: mmImg,
       projectName: "MovieMania WebApp",
       projectDesc:
         "Full-stack movie rating, review, and trailer streaming platform with high-concurrency search and caching. Developed using React, Java, Spring Boot, and MongoDB.",
@@ -384,7 +404,7 @@ const miniProjects = {
   subtitle: "Productivity automations, intelligent scrapers, and micro-tools",
   projects: [
     {
-      image: require("./assets/images/mp_ja.jpg"),
+      image: mpJaImg,
       projectName: "Job AutoFiller",
       projectDesc:
         "Python automation script using Selenium that parses structured profile JSON and auto-fills multi-step job application portals end-to-end.",
@@ -396,7 +416,7 @@ const miniProjects = {
       ]
     },
     {
-      image: require("./assets/images/mp_za.png"),
+      image: mpZaImg,
       projectName: "Meeting Joiner Bot",
       projectDesc:
         "Automated Node.js cron service that syncs with Google Calendar API and autonomously joins scheduled virtual meetings on time.",
@@ -408,7 +428,7 @@ const miniProjects = {
       ]
     },
     {
-      image: require("./assets/images/mp_bm.png"),
+      image: mpBmImg,
       projectName: "Bookmark Mango",
       projectDesc:
         "A modular NestJS REST backend providing fast CRUD operations, tag categorization, and search index for web bookmarks.",
@@ -420,7 +440,7 @@ const miniProjects = {
       ]
     },
     {
-      image: require("./assets/images/mp_lk.jpg"),
+      image: mpLkImg,
       projectName: "Loop Kitchen Monitor",
       projectDesc:
         "Real-time uptime and order monitoring system for multi-location restaurant platforms built with Node.js, Express, and MongoDB.",
@@ -446,7 +466,7 @@ const achievementSection = {
       title: "AWS Certified Developer ‑ Associate (DVA‑C02)",
       subtitle:
         "Demonstrates validated expertise in AWS architecture, microservice development, serverless deployment, security, and cloud debugging.",
-      image: require("./assets/images/awsdva.png"),
+      image: awsdvaImg,
       imageAlt: "AWS Certified Developer Associate Logo",
       footerLink: [
         {
@@ -463,7 +483,7 @@ const achievementSection = {
       title: "Storrior Scholar Award",
       subtitle:
         "Awarded at Storable for leading technical learning initiatives and rapid mastery in cloud, distributed systems, and modern architecture during team migration.",
-      image: require("./assets/images/storablelearning.png"),
+      image: storableLearningImg,
       imageAlt: "Storrior Scholar Award",
       footerLink: [
         {
@@ -476,7 +496,7 @@ const achievementSection = {
       title: "Storrior Spotlight Award",
       subtitle:
         "Awarded for outstanding engineering contributions, proactive problem-solving, and driving core insurance microservice delivery beyond expectations.",
-      image: require("./assets/images/ssa.jpg"),
+      image: ssaImg,
       imageAlt: "Storrior Spotlight Award",
       footerLink: [
         {
@@ -525,7 +545,7 @@ const codingProfile = {
       title: "Codeforces",
       subtitle:
         "Peak rating of 1512 (Specialist) | Regularly competed in Div. 2 and Div. 3 algorithmic contests.",
-      image: require("./assets/images/codeforces.png"),
+      image: codeforcesImg,
       imageAlt: "Codeforces logo",
       profile: {
         name: "Codeforces Profile",
@@ -537,7 +557,7 @@ const codingProfile = {
       title: "CodeChef",
       subtitle:
         "Peak rating of 1841 (4-Star Programmer) | Solved competitive math and algorithmic challenges.",
-      image: require("./assets/images/codechef.png"),
+      image: codechefImg,
       imageAlt: "CodeChef Logo",
       profile: {
         name: "CodeChef Profile",

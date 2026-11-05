@@ -1,0 +1,31 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+
+# Redirect legacy knowledgeshelf.site domain to unified syedamim.site/shelf
+[[redirects]]
+  from = "https://knowledgeshelf.site/*"
+  to = "https://syedamim.site/shelf/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://knowledgeshelf.site/*"
+  to = "https://syedamim.site/shelf/:splat"
+  status = 301
+  force = true
+
+# SPA Client-Side Routing Fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

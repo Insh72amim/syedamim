@@ -35,11 +35,40 @@
 .software-skill-inline > i {
   color: #94a3b8;
   font-size: 1.6rem;
-  transition: color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Brand colors for software skill icons */
+.software-skill-inline > i.fa-java {
+  color: #f89820;
+}
+.software-skill-inline > i.fa-python {
+  color: #3776ab;
+}
+.software-skill-inline > i.fa-js {
+  color: #f7df1e;
+}
+.software-skill-inline > i.fa-react {
+  color: #61dafb;
+}
+.software-skill-inline > i.fa-node {
+  color: #68a063;
+}
+.software-skill-inline > i.fa-database {
+  color: #38bdf8;
+}
+.software-skill-inline > i.fa-aws {
+  color: #ff9900;
+}
+.software-skill-inline > i.fa-docker {
+  color: #2496ed;
+}
+.software-skill-inline > i.fa-robot {
+  color: #a855f7;
 }
 
 .software-skill-inline:hover > i {
-  color: #60a5fa;
+  transform: scale(1.1);
 }
 
 .software-skill-inline > p {
@@ -58,7 +87,7 @@
 /* Light Mode Overrides */
 body.light-mode {
   .software-skill-inline {
-    background: #f8fafc;
+    background: #ffffff;
     border: 1px solid #e2e8f0;
   }
 
@@ -67,16 +96,15 @@ body.light-mode {
     border-color: #93c5fd;
   }
 
-  .software-skill-inline > i {
-    color: #475569;
+  .software-skill-inline > i.fa-js {
+    color: #eab308;
   }
-
-  .software-skill-inline:hover > i {
-    color: #2563eb;
+  .software-skill-inline > i.fa-react {
+    color: #0284c7;
   }
 
   .software-skill-inline > p {
-    color: #64748b;
+    color: #475569;
   }
 
   .software-skill-inline:hover > p {

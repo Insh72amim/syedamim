@@ -7,36 +7,44 @@
 }
 
 .header {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid #e2e8f0;
   width: 100%;
-  padding: 12px 24px;
-  transition: all 0.3s ease;
+  padding: 10px 24px;
+  transition: all 0.25s ease;
 }
 
 .dark-menu.header {
-  background-color: rgba(11, 15, 25, 0.85) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(11, 15, 25, 0.88) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   color: #f8fafc;
 }
 
 .header-container {
-  max-width: 1180px;
+  max-width: 1240px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 12px;
+}
+
+.header-left-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 .header .logo {
   display: flex;
   align-items: center;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: -0.02em;
@@ -51,10 +59,10 @@
 .header .logo-name {
   font-family: "JetBrains Mono", monospace;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   padding: 6px 12px;
   background: rgba(59, 130, 246, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.22);
   border-radius: 8px;
   color: #3b82f6;
   transition: all 0.2s ease;
@@ -65,10 +73,63 @@
   border-color: rgba(59, 130, 246, 0.4);
 }
 
+/* Segmented Mode Switcher Pill (Portfolio <-> KnowledgeShelf) */
+.mode-switcher-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.05);
+  border: 1px solid #e2e8f0;
+  gap: 2px;
+}
+
+.dark-menu .mode-switcher-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+.mode-switch-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #64748b;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.dark-menu .mode-switch-item {
+  color: #94a3b8;
+}
+
+.mode-switch-item:hover {
+  color: #0f172a;
+}
+
+.dark-menu .mode-switch-item:hover {
+  color: #f8fafc;
+}
+
+.mode-switch-item.active {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+.mode-switch-item.shelf-pill:not(.active):hover {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
 .header ul {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -77,13 +138,14 @@
 
 .header li a {
   display: block;
-  padding: 8px 12px;
+  padding: 7px 10px;
   color: #64748b;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 500;
   border-radius: 6px;
   transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .header li a:hover {
@@ -100,22 +162,63 @@
   background: rgba(255, 255, 255, 0.06);
 }
 
+.header-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  margin-left: 4px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dark-menu .header-search-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+}
+
+.header-search-btn:hover {
+  border-color: #3b82f6;
+  color: #2563eb;
+}
+
+.dark-menu .header-search-btn:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  background: rgba(59, 130, 246, 0.12);
+  color: #f8fafc;
+}
+
+.search-kbd {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.08);
+  color: #64748b;
+}
+
+.dark-menu .search-kbd {
+  background: rgba(0, 0, 0, 0.35);
+  color: #94a3b8;
+}
+
 .header .toggle-menu-link {
-  padding: 4px 8px;
-}
-
-.header .toggle-menu-link:hover {
-  background: transparent !important;
-}
-
-.header .menu-btn:hover {
-  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 6px;
 }
 
 .header .menu-icon {
   cursor: pointer;
   display: none;
-  padding: 28px 20px;
+  padding: 16px 10px;
   position: relative;
   user-select: none;
 }
@@ -158,14 +261,17 @@
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+
   .header ul {
     display: none;
   }
 
   .header .menu-icon {
     display: block;
-    padding: 10px 0;
   }
 
   .header .menu-btn:checked ~ ul {
@@ -175,5 +281,21 @@
     gap: 8px;
     width: 100%;
     padding: 16px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .header {
+    padding: 10px 14px;
+  }
+
+  .header .logo-name {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+
+  .mode-switch-item {
+    padding: 4px 8px;
+    font-size: 0.75rem;
   }
 }

@@ -1,0 +1,105 @@
+import React, {useContext} from "react";
+import {useNavigate} from "react-router-dom";
+import "./StandardProject.scss";
+import {bigProjects} from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
+
+export default function StandardProject() {
+  const navigate = useNavigate();
+
+  function handleLinkClick(link) {
+    if (!link || !link.url) {
+      return;
+    }
+    if (link.internal || link.url.startsWith("/")) {
+      navigate(link.url);
+      return;
+    }
+    var win = window.open(link.url, "_blank");
+    win.focus();
+  }
+
+  const {isDark} = useContext(StyleContext);
+  if (!bigProjects.display) {
+    return null;
+  }
+  return (
+    <div className="animate-fade-in">
+      <div className="main" id="projects">
+        <div className="section-header-center">
+          <div className="section-eyebrow">PORTFOLIO WORK</div>
+          <h1
+            className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+          >
+            {bigProjects.title}
+          </h1>
+          <p
+            className={
+              isDark
+                ? "dark-mode project-subtitle"
+                : "subTitle project-subtitle"
+            }
+          >
+            {bigProjects.subtitle}
+          </p>
+        </div>
+
+        <div className="projects-container">
+          {bigProjects.projects.map((project, i) => {
+            return (
+              <div
+                key={i}
+                className={
+                  isDark
+                    ? "dark-mode project-card project-card-dark"
+                    : "project-card project-card-light"
+                }
+              >
+                {project.image ? (
+                  <div className="project-image">
+                    <img
+                      src={project.image}
+                      alt={project.projectName}
+                      className="card-image"
+                    ></img>
+                  </div>
+                ) : null}
+                <div className="project-detail">
+                  <h5
+                    className={isDark ? "dark-mode card-title" : "card-title"}
+                  >
+                    {project.projectName}
+                  </h5>
+                  <p
+                    className={
+                      isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                    }
+                  >
+                    {project.projectDesc}
+                  </p>
+                  {project.footerLink ? (
+                    <div className="project-card-footer">
+                      {project.footerLink.map((link, i) => {
+                        return (
+                          <span
+                            key={i}
+                            className={
+                              isDark ? "dark-mode project-tag" : "project-tag"
+                            }
+                            onClick={() => handleLinkClick(link)}
+                          >
+                            {link.name} {link.internal ? "→" : "↗"}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}

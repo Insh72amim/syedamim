@@ -71,12 +71,29 @@
   border-radius: 6px;
   transition: all 0.2s ease;
   cursor: default;
+  text-decoration: none;
+}
+
+.techstack-item-link {
+  cursor: pointer;
 }
 
 .techstack-item-pill:hover {
   background: rgba(59, 130, 246, 0.12);
-  border-color: rgba(59, 130, 246, 0.3);
+  border-color: rgba(59, 130, 246, 0.35);
   transform: translateY(-1px);
+}
+
+.techstack-shelf-arrow {
+  font-size: 0.68rem;
+  color: #60a5fa;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.techstack-item-link:hover .techstack-shelf-arrow {
+  opacity: 1;
+  transform: translate(1px, -1px);
 }
 
 .techstack-icon {
@@ -121,6 +138,10 @@ body.light-mode {
 
   .techstack-name {
     color: #334155;
+  }
+
+  .techstack-shelf-arrow {
+    color: #2563eb;
   }
 }
 

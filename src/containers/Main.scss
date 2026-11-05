@@ -5,3 +5,8 @@
   color: white;
   transition: "0.1s";
 }
+
+body.light-mode .main-wrapper {
+  background-color: #f4f6f9;
+  color: #1e293b;
+}

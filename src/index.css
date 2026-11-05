@@ -1,10 +1,14 @@
-/* Base Styles & Modern Typography */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Base Styles & Modern Typography */
 * {
   box-sizing: border-box;
 }
 
-code {
+code,
+pre {
   font-family: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas,
     "Courier New", monospace;
 }
@@ -24,7 +28,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 body.dark-mode {
@@ -33,8 +37,8 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: #f4f6f9;
+  color: #1e293b;
 }
 
 ::selection {
@@ -45,6 +49,7 @@ body.light-mode {
 /* Scrollbar Customization */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 body.dark-mode ::-webkit-scrollbar-track {
@@ -93,4 +98,222 @@ body.light-mode ::-webkit-scrollbar-thumb:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ==========================================================================
+   Unified Theme Scope for KnowledgeShelf & Sidebar in Light Mode
+   Adapts dark-mode Tailwind utility classes to a soft, low-fatigue Daylight Slate
+   ========================================================================== */
+body.light-mode .shelf-theme-scope {
+  background-color: #f4f6f9 !important;
+  color: #1e293b !important;
+}
+
+/* Main backgrounds & containers */
+body.light-mode .shelf-theme-scope .bg-gray-950 {
+  background-color: #eef2f6 !important;
+}
+
+body.light-mode .shelf-theme-scope .bg-gray-900 {
+  background-color: #f4f6f9 !important;
+}
+
+body.light-mode .shelf-theme-scope .bg-gray-900\/50,
+body.light-mode .shelf-theme-scope .bg-gray-900\/60,
+body.light-mode .shelf-theme-scope .bg-gray-900\/70,
+body.light-mode .shelf-theme-scope .bg-gray-900\/80,
+body.light-mode .shelf-theme-scope .bg-gray-900\/90,
+body.light-mode .shelf-theme-scope .bg-gray-900\/95 {
+  background-color: #eef2f6 !important;
+}
+
+/* Cards & Sidebar Surface */
+body.light-mode .shelf-theme-scope .bg-gray-800,
+body.light-mode .shelf-theme-scope .bg-gray-800\/80,
+body.light-mode .shelf-theme-scope .bg-gray-800\/90,
+body.light-mode .shelf-theme-scope .bg-gray-800\/95 {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+}
+
+body.light-mode .shelf-theme-scope .bg-gray-800\/30,
+body.light-mode .shelf-theme-scope .bg-gray-800\/40,
+body.light-mode .shelf-theme-scope .bg-gray-800\/50,
+body.light-mode .shelf-theme-scope .bg-gray-800\/60,
+body.light-mode .shelf-theme-scope .bg-gray-800\/70 {
+  background-color: #f8fafc !important;
+}
+
+body.light-mode .shelf-theme-scope .bg-gray-700,
+body.light-mode .shelf-theme-scope .bg-gray-700\/50,
+body.light-mode .shelf-theme-scope .bg-gray-700\/60,
+body.light-mode .shelf-theme-scope .bg-gray-700\/70 {
+  background-color: #e2e8f0 !important;
+}
+
+/* Soft Borders */
+body.light-mode .shelf-theme-scope .border-gray-800,
+body.light-mode .shelf-theme-scope .border-gray-800\/60,
+body.light-mode .shelf-theme-scope .border-gray-700,
+body.light-mode .shelf-theme-scope .border-gray-700\/40,
+body.light-mode .shelf-theme-scope .border-gray-700\/50,
+body.light-mode .shelf-theme-scope .border-gray-700\/60,
+body.light-mode .shelf-theme-scope .border-gray-600 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Balanced Typography (slate-800 instead of harsh pitch black) */
+body.light-mode .shelf-theme-scope .text-white,
+body.light-mode .shelf-theme-scope .text-gray-100 {
+  color: #1e293b !important;
+}
+
+body.light-mode .shelf-theme-scope .text-gray-200,
+body.light-mode .shelf-theme-scope .text-gray-300 {
+  color: #334155 !important;
+}
+
+body.light-mode .shelf-theme-scope .text-gray-400 {
+  color: #475569 !important;
+}
+
+body.light-mode .shelf-theme-scope .text-gray-500 {
+  color: #64748b !important;
+}
+
+/* Hover States */
+body.light-mode .shelf-theme-scope .hover\:bg-gray-900:hover,
+body.light-mode .shelf-theme-scope .hover\:bg-gray-800:hover,
+body.light-mode .shelf-theme-scope .hover\:bg-gray-700:hover,
+body.light-mode .shelf-theme-scope .hover\:bg-gray-700\/60:hover,
+body.light-mode .shelf-theme-scope .hover\:bg-gray-700\/70:hover {
+  background-color: #e8eef5 !important;
+}
+
+body.light-mode .shelf-theme-scope .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* Accent Tints & Badges in Light Mode (fixes muddy 900/30 backgrounds & washed-out 400 text) */
+body.light-mode .shelf-theme-scope [class*="bg-blue-900"],
+body.light-mode .shelf-theme-scope [class*="bg-blue-950"] {
+  background-color: rgba(59, 130, 246, 0.1) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-blue-700"],
+body.light-mode .shelf-theme-scope [class*="border-blue-800"] {
+  border-color: rgba(59, 130, 246, 0.28) !important;
+}
+body.light-mode .shelf-theme-scope .text-blue-400,
+body.light-mode .shelf-theme-scope .text-blue-300 {
+  color: #2563eb !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-blue-900"]:hover {
+  background-color: rgba(59, 130, 246, 0.16) !important;
+}
+
+body.light-mode .shelf-theme-scope [class*="bg-indigo-900"],
+body.light-mode .shelf-theme-scope [class*="bg-indigo-950"] {
+  background-color: rgba(99, 102, 241, 0.1) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-indigo-700"],
+body.light-mode .shelf-theme-scope [class*="border-indigo-800"] {
+  border-color: rgba(99, 102, 241, 0.28) !important;
+}
+body.light-mode .shelf-theme-scope .text-indigo-400,
+body.light-mode .shelf-theme-scope .text-indigo-300 {
+  color: #4f46e5 !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-indigo-900"]:hover {
+  background-color: rgba(99, 102, 241, 0.16) !important;
+}
+
+body.light-mode .shelf-theme-scope [class*="bg-amber-900"],
+body.light-mode .shelf-theme-scope [class*="bg-amber-950"],
+body.light-mode .shelf-theme-scope [class*="bg-orange-900"],
+body.light-mode .shelf-theme-scope [class*="bg-orange-950"] {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-amber-700"],
+body.light-mode .shelf-theme-scope [class*="border-orange-700"] {
+  border-color: rgba(217, 119, 6, 0.3) !important;
+}
+body.light-mode .shelf-theme-scope .text-amber-400,
+body.light-mode .shelf-theme-scope .text-amber-300,
+body.light-mode .shelf-theme-scope .text-orange-400,
+body.light-mode .shelf-theme-scope .text-orange-300 {
+  color: #b45309 !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-amber-900"]:hover,
+body.light-mode .shelf-theme-scope [class*="hover:bg-orange-900"]:hover {
+  background-color: rgba(245, 158, 11, 0.18) !important;
+}
+
+body.light-mode .shelf-theme-scope [class*="bg-emerald-900"],
+body.light-mode .shelf-theme-scope [class*="bg-green-900"] {
+  background-color: rgba(16, 185, 129, 0.1) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-emerald-700"],
+body.light-mode .shelf-theme-scope [class*="border-green-700"] {
+  border-color: rgba(16, 185, 129, 0.28) !important;
+}
+body.light-mode .shelf-theme-scope .text-emerald-400,
+body.light-mode .shelf-theme-scope .text-green-400,
+body.light-mode .shelf-theme-scope .text-emerald-300,
+body.light-mode .shelf-theme-scope .text-green-300 {
+  color: #047857 !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-green-900"]:hover,
+body.light-mode .shelf-theme-scope [class*="hover:bg-emerald-900"]:hover {
+  background-color: rgba(16, 185, 129, 0.16) !important;
+}
+
+body.light-mode .shelf-theme-scope [class*="bg-purple-900"],
+body.light-mode .shelf-theme-scope [class*="bg-fuchsia-900"] {
+  background-color: rgba(147, 51, 234, 0.1) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-purple-700"],
+body.light-mode .shelf-theme-scope [class*="border-fuchsia-700"] {
+  border-color: rgba(147, 51, 234, 0.28) !important;
+}
+body.light-mode .shelf-theme-scope .text-purple-400,
+body.light-mode .shelf-theme-scope .text-purple-300,
+body.light-mode .shelf-theme-scope .text-fuchsia-400,
+body.light-mode .shelf-theme-scope .text-fuchsia-300 {
+  color: #7e22ce !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-purple-900"]:hover,
+body.light-mode .shelf-theme-scope [class*="hover:bg-fuchsia-900"]:hover {
+  background-color: rgba(147, 51, 234, 0.16) !important;
+}
+
+body.light-mode .shelf-theme-scope [class*="bg-sky-900"],
+body.light-mode .shelf-theme-scope [class*="bg-cyan-900"] {
+  background-color: rgba(14, 165, 233, 0.1) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-sky-700"],
+body.light-mode .shelf-theme-scope [class*="border-cyan-700"] {
+  border-color: rgba(14, 165, 233, 0.28) !important;
+}
+body.light-mode .shelf-theme-scope .text-sky-400,
+body.light-mode .shelf-theme-scope .text-cyan-400 {
+  color: #0369a1 !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-sky-900"]:hover {
+  background-color: rgba(14, 165, 233, 0.16) !important;
+}
+
+body.light-mode .shelf-theme-scope [class*="bg-red-900"],
+body.light-mode .shelf-theme-scope [class*="bg-rose-900"] {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+body.light-mode .shelf-theme-scope [class*="border-red-700"],
+body.light-mode .shelf-theme-scope [class*="border-rose-700"] {
+  border-color: rgba(239, 68, 68, 0.28) !important;
+}
+body.light-mode .shelf-theme-scope .text-red-400,
+body.light-mode .shelf-theme-scope .text-rose-400 {
+  color: #b91c1c !important;
+}
+body.light-mode .shelf-theme-scope [class*="hover:bg-red-900"]:hover {
+  background-color: rgba(239, 68, 68, 0.16) !important;
 }

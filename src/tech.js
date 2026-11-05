@@ -30,39 +30,48 @@ export const TECH = {
   AI_ML: {
     OpenAI: {
       name: "OpenAI (GPT-4o)",
-      icon: openaiIcon
+      icon: openaiIcon,
+      shelfPath: "/shelf/prompt-engineering/prompt-engineering-overview"
     },
     Claude: {
       name: "Anthropic Claude",
-      icon: anthropicIcon
+      icon: anthropicIcon,
+      shelfPath: "/shelf/prompt-engineering/prompt-engineering-overview"
     },
     Gemini: {
       name: "Google Gemini",
-      icon: geminiIcon
+      icon: geminiIcon,
+      shelfPath: "/shelf/prompt-engineering/prompt-engineering-overview"
     },
     LangChain: {
       name: "LangChain",
-      icon: langchainIcon
+      icon: langchainIcon,
+      shelfPath: "/shelf/ai-engineering/ml-overview"
     },
     HuggingFace: {
       name: "Hugging Face",
-      icon: huggingfaceIcon
+      icon: huggingfaceIcon,
+      shelfPath: "/shelf/ai-engineering/ml-overview"
     },
     PyTorch: {
       name: "PyTorch",
-      icon: pytorchIcon
+      icon: pytorchIcon,
+      shelfPath: "/shelf/ai-books/deep-learning-goodfellow"
     },
     Pinecone: {
       name: "Pinecone Vector DB",
-      icon: pineconeIcon
+      icon: pineconeIcon,
+      shelfPath: "/shelf/ai-engineering/ml-overview"
     },
     Chroma: {
       name: "ChromaDB",
-      icon: chromaIcon
+      icon: chromaIcon,
+      shelfPath: "/shelf/ai-engineering/ml-overview"
     },
     Ollama: {
       name: "Ollama (Local LLMs)",
-      icon: ollamaIcon
+      icon: ollamaIcon,
+      shelfPath: "/shelf/ai-engineering/ml-overview"
     }
   },
   AITOOLS: {
@@ -86,7 +95,8 @@ export const TECH = {
   PROGRAMMINGLANG: {
     JAVA: {
       name: "Java",
-      icon: "https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png"
+      icon: "https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png",
+      shelfPath: "/shelf/programming-languages/java-lang"
     },
     SCALA: {
       name: "Scala",
@@ -94,59 +104,72 @@ export const TECH = {
     },
     PYTHON: {
       name: "Python",
-      icon: "https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png",
+      shelfPath: "/shelf/programming-languages/python-lang"
     },
     TS: {
       name: "TypeScript",
-      icon: "https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png",
+      shelfPath: "/shelf/programming-languages/javascript-lang"
     },
     JS: {
       name: "JavaScript",
-      icon: "https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"
+      icon: "https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png",
+      shelfPath: "/shelf/programming-languages/javascript-lang"
     },
     CPP: {
       name: "C++",
-      icon: "https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png"
+      icon: "https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png",
+      shelfPath: "/shelf/programming-languages/cpp-lang"
     },
     GO: {
       name: "Go",
-      icon: "https://user-images.githubusercontent.com/25181517/192149581-88194d20-1a37-4be8-8801-5dc0017ffbbe.png"
+      icon: "https://user-images.githubusercontent.com/25181517/192149581-88194d20-1a37-4be8-8801-5dc0017ffbbe.png",
+      shelfPath: "/shelf/programming-languages/go-lang"
     }
   },
   BACKEND: {
     SpringBoot: {
       name: "Spring Boot",
-      icon: "https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png",
+      shelfPath: "/shelf/backend-engineering/java"
     },
     SPRING: {
       name: "Spring Framework",
-      icon: "https://user-images.githubusercontent.com/25181517/117201470-f6d56780-adec-11eb-8f7c-e70e376cfd07.png"
+      icon: "https://user-images.githubusercontent.com/25181517/117201470-f6d56780-adec-11eb-8f7c-e70e376cfd07.png",
+      shelfPath: "/shelf/backend-engineering/java"
     },
     Nest: {
       name: "NestJS",
-      icon: "https://github.com/marwin1991/profile-technology-icons/assets/136815194/519bfaf3-c242-431e-a269-876979f05574"
+      icon: "https://github.com/marwin1991/profile-technology-icons/assets/136815194/519bfaf3-c242-431e-a269-876979f05574",
+      shelfPath: "/shelf/backend-engineering/nodejs"
     },
     NODEJS: {
       name: "Node.js",
-      icon: "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png",
+      shelfPath: "/shelf/backend-engineering/nodejs"
     },
     EXPRESS: {
       name: "Express.js",
-      icon: "https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png",
+      shelfPath: "/shelf/backend-engineering/nodejs"
     },
     FLASK: {
       name: "Flask",
-      icon: "https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png",
+      shelfPath: "/shelf/backend-engineering/python"
     },
     Django: {
       name: "Django",
-      icon: "https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4"
+      icon: "https://github.com/marwin1991/profile-technology-icons/assets/62091613/9bf5650b-e534-4eae-8a26-8379d076f3b4",
+      shelfPath: "/shelf/backend-engineering/python"
     }
   },
   BIGDATA: {
     Snowflake: {
       name: "Snowflake",
-      icon: snowflakeIcon
+      icon: snowflakeIcon,
+      shelfPath: "/shelf/data-engineering/snowflake"
     },
     Presto: {
       name: "Presto",
@@ -154,37 +177,45 @@ export const TECH = {
     },
     Kafka: {
       name: "Apache Kafka",
-      icon: kafkaIcon
+      icon: kafkaIcon,
+      shelfPath: "/shelf/data-engineering/kafka"
     },
     Parquet: {
       name: "Apache Parquet",
-      icon: parquetIcon
+      icon: parquetIcon,
+      shelfPath: "/shelf/data-engineering/parquet"
     },
     Protobuf: {
       name: "Protocol Buffers",
-      icon: protobufIcon
+      icon: protobufIcon,
+      shelfPath: "/shelf/data-engineering/protobuf"
     },
     ElasticSearch: {
       name: "Elasticsearch",
-      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN2B_lpEaCJMsSp0qvXPN66bwaVe_zIh03lY9ZCLzVJA&s"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN2B_lpEaCJMsSp0qvXPN66bwaVe_zIh03lY9ZCLzVJA&s",
+      shelfPath: "/shelf/databases/elasticsearch"
     }
   },
   DATABASES: {
     PSQL: {
       name: "PostgreSQL",
-      icon: "https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png"
+      icon: "https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png",
+      shelfPath: "/shelf/databases/sql"
     },
     MONGODB: {
       name: "MongoDB",
-      icon: "https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png"
+      icon: "https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png",
+      shelfPath: "/shelf/databases/mongodb"
     },
     REDIS: {
       name: "Redis",
-      icon: "https://user-images.githubusercontent.com/25181517/182884894-d3fa6ee0-f2b4-4960-9961-64740f533f2a.png"
+      icon: "https://user-images.githubusercontent.com/25181517/182884894-d3fa6ee0-f2b4-4960-9961-64740f533f2a.png",
+      shelfPath: "/shelf/databases/redis"
     },
     SQL: {
       name: "MySQL",
-      icon: "https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png",
+      shelfPath: "/shelf/databases/sql"
     }
   },
   DEVOPS: {
@@ -194,11 +225,13 @@ export const TECH = {
     },
     Kubernetes: {
       name: "Kubernetes",
-      icon: kubernetesIcon
+      icon: kubernetesIcon,
+      shelfPath: "/shelf/devops-engineering/kubernetes"
     },
     Docker: {
       name: "Docker",
-      icon: dockerIcon
+      icon: dockerIcon,
+      shelfPath: "/shelf/devops-engineering/docker"
     },
     ArgoCD: {
       name: "Argo CD",
@@ -228,19 +261,23 @@ export const TECH = {
   FRONTEND: {
     React: {
       name: "React",
-      icon: "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png"
+      icon: "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png",
+      shelfPath: "/shelf/frontend-engineering/react"
     },
     Next: {
       name: "Next.js",
-      icon: "https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704"
+      icon: "https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704",
+      shelfPath: "/shelf/frontend-engineering/nextjs"
     },
     Redux: {
       name: "Redux",
-      icon: "https://user-images.githubusercontent.com/25181517/187896150-cc1dcb12-d490-445c-8e4d-1275cd2388d6.png"
+      icon: "https://user-images.githubusercontent.com/25181517/187896150-cc1dcb12-d490-445c-8e4d-1275cd2388d6.png",
+      shelfPath: "/shelf/frontend-engineering/state-mgmt"
     },
     Tailwind: {
       name: "Tailwind CSS",
-      icon: "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png"
+      icon: "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
+      shelfPath: "/shelf/frontend-engineering/tailwind"
     },
     HTML: {
       name: "HTML5",
@@ -280,23 +317,28 @@ export const TECH = {
   COMM: {
     Kafka: {
       name: "Apache Kafka",
-      icon: kafkaIcon
+      icon: kafkaIcon,
+      shelfPath: "/shelf/data-engineering/kafka"
     },
     RabbitMq: {
       name: "RabbitMQ",
-      icon: "https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Rabbit.png/_jcr_content/renditions/cq5dam.web.1280.1280.png"
+      icon: "https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Rabbit.png/_jcr_content/renditions/cq5dam.web.1280.1280.png",
+      shelfPath: "/shelf/backend-engineering/rabbitmq"
     },
     Grpc: {
       name: "gRPC",
-      icon: "https://grpc.io/img/logos/grpc-icon-color.png"
+      icon: "https://grpc.io/img/logos/grpc-icon-color.png",
+      shelfPath: "/shelf/backend-engineering/grpc"
     },
     GraphQl: {
       name: "GraphQL",
-      icon: "https://miro.medium.com/v2/resize:fit:400/1*nP2C50GK4_-ly_R_mq3juQ.png"
+      icon: "https://miro.medium.com/v2/resize:fit:400/1*nP2C50GK4_-ly_R_mq3juQ.png",
+      shelfPath: "/shelf/backend-engineering/graphql"
     },
     WebSockets: {
       name: "WebSockets",
-      icon: "https://miro.medium.com/v2/resize:fit:1300/1*4BtGcPz3JauG9qsNXzLMXA.gif"
+      icon: "https://miro.medium.com/v2/resize:fit:1300/1*4BtGcPz3JauG9qsNXzLMXA.gif",
+      shelfPath: "/shelf/backend-engineering/websockets"
     },
     WebRtc: {
       name: "WebRTC",
@@ -304,7 +346,8 @@ export const TECH = {
     },
     ElasticSearch: {
       name: "Elasticsearch",
-      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN2B_lpEaCJMsSp0qvXPN66bwaVe_zIh03lY9ZCLzVJA&s"
+      icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN2B_lpEaCJMsSp0qvXPN66bwaVe_zIh03lY9ZCLzVJA&s",
+      shelfPath: "/shelf/databases/elasticsearch"
     }
   }
 };

@@ -1,69 +1,43 @@
 {
-  "homepage": "https://developerfolio.js.org/",
-  "name": "developerfolio",
-  "version": "0.1.0",
+  "name": "syedamim-portfolio-knowledgeshelf",
   "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3005",
+    "start": "vite --port 3005",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview --port 3005"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "colorthief": "^2.3.0",
-    "gh-pages": "^2.1.1",
-    "jest-canvas-mock": "^2.3.1",
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.0",
+    "katex": "^0.16.27",
     "lottie-react": "^2.4.0",
+    "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-easy-emoji": "^1.8.1",
     "react-headroom": "^3.0.0",
-    "react-reveal": "^1.2.2",
-    "react-scripts": "^5.0.1",
-    "react-twitter-embed": "3.0.3",
-    "sass": "^1.32.8",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
-    "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
-    "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      ">0.3%",
-      "not ie 11",
-      "not dead",
-      "not op_mini all",
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-router-dom": "^6.22.0",
+    "react-syntax-highlighter": "^16.1.0",
+    "reactflow": "^11.10.0",
+    "recharts": "^3.5.1",
+    "tailwind-merge": "^2.2.0",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "dotenv": "^8.6.0",
-    "prettier": "^2.3.1"
-  },
-  "overrides": {
-    "react-reveal": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "react-twitter-embed": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    }
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "sass": "^1.77.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
   }
 }

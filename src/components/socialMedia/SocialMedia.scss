@@ -12,10 +12,8 @@
 }
 
 .icon-button i {
-  color: #94a3b8;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  color: #ffffff;
+  border-radius: 10px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -23,29 +21,78 @@
   font-size: 1.15rem;
   width: 40px;
   height: 40px;
-  transition: all 0.2s ease;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+/* Official Brand Colors Always On */
+.github i {
+  background: linear-gradient(135deg, #24292e 0%, #111418 100%);
+  box-shadow: 0 3px 10px rgba(36, 41, 46, 0.35);
+}
+
+.linkedin i {
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+  box-shadow: 0 3px 10px rgba(10, 102, 194, 0.35);
+}
+
+.google i {
+  background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%);
+  box-shadow: 0 3px 10px rgba(234, 67, 53, 0.35);
+}
+
+.gitlab i {
+  background: linear-gradient(135deg, #fc6d26 0%, #e24329 100%);
+  box-shadow: 0 3px 10px rgba(252, 109, 38, 0.35);
+}
+
+.facebook i {
+  background: linear-gradient(135deg, #1877f2 0%, #0c5dc7 100%);
+  box-shadow: 0 3px 10px rgba(24, 119, 242, 0.35);
+}
+
+.instagram i {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0 3px 10px rgba(214, 36, 159, 0.35);
+}
+
+.twitter i {
+  background: linear-gradient(135deg, #1da1f2 0%, #0d8bd9 100%);
+  box-shadow: 0 3px 10px rgba(29, 161, 242, 0.35);
+}
+
+.medium i {
+  background: linear-gradient(135deg, #12100e 0%, #292524 100%);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+.stack-overflow i {
+  background: linear-gradient(135deg, #f48024 0%, #d66811 100%);
+  box-shadow: 0 3px 10px rgba(244, 128, 36, 0.35);
+}
+
+.kaggle i {
+  background: linear-gradient(135deg, #20beff 0%, #0ea5e9 100%);
+  box-shadow: 0 3px 10px rgba(32, 190, 255, 0.35);
 }
 
 .icon-button i:hover {
-  color: #ffffff;
-  background: #3b82f6;
-  border-color: #3b82f6;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  transform: translateY(-3px) scale(1.06);
+  filter: brightness(1.12);
 }
 
-/* Light Mode */
+/* Light Mode Refinements */
 body.light-mode {
   .icon-button i {
-    color: #475569;
-    background: #f1f5f9;
-    border-color: #e2e8f0;
-  }
-
-  .icon-button i:hover {
-    color: #ffffff;
-    background: #2563eb;
-    border-color: #2563eb;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    border-color: rgba(15, 23, 42, 0.08);
   }
 }
