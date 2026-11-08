@@ -43,14 +43,11 @@ const Layout = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
-  // Portfolio is at the top of the sidebar and opened by default
-  const [isPortfolioExpanded, setIsPortfolioExpanded] = useState(true);
   const [activePortfolioSection, setActivePortfolioSection] =
     useState("greeting");
 
-  const [expandedSuperCategories, setExpandedSuperCategories] = useState(() =>
-    superCategories.map((group) => group.id)
-  );
+  // All KnowledgeShelf categories & superCategories collapsed by default
+  const [expandedSuperCategories, setExpandedSuperCategories] = useState([]);
   const [expandedCategories, setExpandedCategories] = useState([]);
 
   const isPortfolioRoute = location.pathname === "/";
@@ -315,9 +312,7 @@ const Layout = () => {
   };
 
   const hasAnyExpanded =
-    isPortfolioExpanded ||
-    expandedCategories.length > 0 ||
-    expandedSuperCategories.length > 0;
+    expandedCategories.length > 0 || expandedSuperCategories.length > 0;
 
   useEffect(() => {
     const handleResize = () => {
@@ -354,7 +349,6 @@ const Layout = () => {
           <Link
             to="/"
             onClick={() => {
-              setIsPortfolioExpanded(true);
               if (isMobile) setMobileSidebarOpen(false);
             }}
             className="flex items-center gap-2.5 hover:opacity-90 transition-opacity"
@@ -400,7 +394,6 @@ const Layout = () => {
             {hasAnyExpanded && (
               <button
                 onClick={() => {
-                  setIsPortfolioExpanded(false);
                   setExpandedCategories([]);
                   setExpandedSuperCategories([]);
                 }}

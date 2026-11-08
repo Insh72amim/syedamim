@@ -8,7 +8,7 @@ import localhubImg from "./assets/images/localhub.svg";
 import certificateVaultImg from "./assets/images/certificate_vault.svg";
 import iitpImg from "./assets/images/iitp.png";
 import cbseImg from "./assets/images/cbse.png";
-import goldmanSachsImg from "./assets/images/goldmansachs.png";
+import goldmanSachsImg from "./assets/images/goldmansachs.svg";
 import storableImg from "./assets/images/storable.png";
 import byjusImg from "./assets/images/byjus.png";
 import bytelearnImg from "./assets/images/bytelearn.png";

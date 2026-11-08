@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="gs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7399C6"/>
+      <stop offset="100%" stop-color="#5B82B0"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="20" fill="url(#gs-bg)"/>
+  <text
+    x="60"
+    y="79"
+    text-anchor="middle"
+    fill="#FFFFFF"
+    font-family="Georgia, 'Times New Roman', Times, serif"
+    font-weight="700"
+    font-size="60"
+    letter-spacing="-2"
+  >GS</text>
+</svg>
