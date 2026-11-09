@@ -16,6 +16,7 @@ import CodingProfile from "./codingProfile/codingProfile";
 import "./Main.scss";
 import Courses from "./courses/Courses";
 import MiniProject from "./MiniProjects/MiniProject";
+import ReadingShelf from "../components/readingShelf/ReadingShelf";
 
 const Main = () => {
   const {isDark} = useContext(StyleContext);
@@ -43,13 +44,14 @@ const Main = () => {
           <Greeting />
           <Skills />
           <WorkExperience />
+          <Education />
           <TechStack />
           <StandardProject />
           <MiniProject />
           <CodingProfile />
           <Achievement />
-          <Education />
           <Courses />
+          <ReadingShelf />
           <Profile />
           <Footer />
           <ScrollToTopButton />

@@ -89,6 +89,14 @@ body.light-mode ::-webkit-scrollbar-thumb:hover {
   animation: fadeIn 0.45s ease-out forwards;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

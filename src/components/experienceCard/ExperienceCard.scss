@@ -126,7 +126,51 @@
   font-size: 0.975rem;
   line-height: 1.6;
   color: #cbd5e1;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
+}
+
+.exp-expandable-content {
+  overflow: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.exp-expandable-content.collapsed {
+  display: none;
+}
+
+.exp-expandable-content.expanded {
+  display: block;
+  margin-top: 14px;
+}
+
+.exp-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #60a5fa;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    color: #93c5fd;
+    background: rgba(59, 130, 246, 0.1);
+  }
+}
+
+body.light-mode .exp-toggle-btn {
+  color: #2563eb;
+
+  &:hover {
+    color: #1d4ed8;
+    background: rgba(37, 99, 235, 0.08);
+  }
 }
 
 .exp-bullets-list {
@@ -274,14 +318,29 @@ body.light-mode {
 }
 
 @media (max-width: 640px) {
+  .experience-card-pro {
+    padding: 18px 16px;
+  }
   .exp-card-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+  }
+  .exp-company-info {
+    gap: 12px;
+  }
+  .exp-logo-wrapper {
+    width: 44px;
+    height: 44px;
+  }
+  .exp-role-title {
+    font-size: 1.05rem;
   }
   .exp-date-badge {
-    margin-top: 6px;
+    margin-top: 2px;
+    font-size: 0.72rem;
   }
   .experience-heading {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 }

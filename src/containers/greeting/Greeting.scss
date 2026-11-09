@@ -560,16 +560,63 @@ body.light-mode {
 @media (max-width: 860px) {
   .greeting-main {
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
   }
   .greeting-title {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
     text-align: left;
   }
   .greeting-role {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   .terminal-card {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .status-badge {
+    font-size: 0.75rem;
+    padding: 5px 11px;
+  }
+  .greeting-title {
+    font-size: 1.95rem;
+  }
+  .greeting-text-p {
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .button-greeting-div {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .terminal-body {
+    padding: 14px;
+    font-size: 0.74rem;
+  }
+  .mini-timeline-section {
+    padding: 10px 12px 12px;
+  }
+  .mini-timeline-item {
+    padding: 6px 8px;
+    gap: 8px;
+  }
+  .mini-timeline-place {
+    font-size: 0.78rem;
+  }
+  .mini-timeline-duration {
+    font-size: 0.64rem;
+    padding: 1px 6px;
+  }
+  .mini-timeline-bottom {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .mini-timeline-role {
+    font-size: 0.68rem;
+  }
+  .mini-timeline-period {
+    font-size: 0.62rem;
   }
 }

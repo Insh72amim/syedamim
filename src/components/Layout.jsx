@@ -27,12 +27,13 @@ const PORTFOLIO_SECTIONS = [
   { id: "greeting", name: "Overview & Bio", icon: User },
   { id: "skills", name: "Core Capabilities", icon: Sparkles },
   { id: "experience", name: "Work Experience", icon: Briefcase },
+  { id: "education", name: "Education", icon: GraduationCap },
   { id: "techstack", name: "Tech Arsenal", icon: Cpu },
   { id: "projects", name: "Projects", icon: FolderGit2 },
   { id: "codingprofile", name: "Coding Profiles", icon: Code2 },
   { id: "achievements", name: "Achievements", icon: Award },
-  { id: "education", name: "Education", icon: GraduationCap },
-  { id: "contact", name: "Contact", icon: Mail },
+  { id: "reading-shelf", name: "Reading Shelf", icon: BookOpen },
+  { id: "contact", name: "Get In Touch", icon: Mail },
 ];
 
 const Layout = () => {
@@ -621,8 +622,8 @@ const Layout = () => {
 
         {/* Top Section Navigation Bar on Portfolio Page */}
         {isPortfolioRoute && (
-          <div className="sticky top-0 lg:top-0 z-20 border-b border-gray-800/80 bg-gray-900/90 backdrop-blur-md">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+          <div className="sticky top-[57px] lg:top-0 z-10 border-b border-gray-800/80 bg-gray-900/90 backdrop-blur-md">
+            <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
               {PORTFOLIO_SECTIONS.map((sec) => {
                 const SecIcon = sec.icon;
                 const isSecActive = activePortfolioSection === sec.id;

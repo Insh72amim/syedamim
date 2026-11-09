@@ -170,12 +170,6 @@ export default function Greeting() {
                     <span className="code-str">"Snowflake"</span>,{" "}
                     <span className="code-str">"AWS"</span>],{"\n"}
                     {"  "}
-                    <span className="code-key">aiStack</span>: [
-                    <span className="code-str">"LangChain"</span>,{" "}
-                    <span className="code-str">"GPT-4o"</span>,{" "}
-                    <span className="code-str">"Claude 3.5"</span>,{" "}
-                    <span className="code-str">"RAG"</span>],{"\n"}
-                    {"  "}
                     <span className="code-key">certifications</span>: [
                     <span className="code-str">"AWS DVA-C02"</span>]{"\n"}
                     &#125;;

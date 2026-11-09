@@ -1,0 +1,1 @@
+import{j as n}from"./ui-l-wn3dQa.js";import{r as s}from"./vendor-C-RugAsD.js";import{k as o}from"./math-Dc8nsIP1.js";const i=({math:t,block:r=!1})=>{const e=s.useRef(null);return s.useEffect(()=>{e.current&&o.render(t,e.current,{throwOnError:!1,displayMode:r})},[t,r]),n.jsx("span",{ref:e,className:r?"block my-4 text-center":"inline px-1"})};export{i as M};

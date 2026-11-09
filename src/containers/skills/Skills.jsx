@@ -37,8 +37,8 @@ export default function Skills() {
             <div className="pillar-card">
               <div className="pillar-icon pillar-icon-data">
                 <svg
-                  width="22"
-                  height="22"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#38bdf8"
@@ -51,17 +51,16 @@ export default function Skills() {
               </div>
               <h3 className="pillar-title">Distributed Data Pipelines</h3>
               <p className="pillar-desc">
-                Architecting high-throughput ingestion pipelines across
-                Snowflake, APIs, and Data Lakes with Scala, Java, Presto,
-                Parquet, and Protocol Buffers.
+                High-throughput ingestion across Snowflake, APIs &amp; Data
+                Lakes with Scala, Java, Presto &amp; Parquet.
               </p>
             </div>
 
             <div className="pillar-card">
               <div className="pillar-icon pillar-icon-ai">
                 <svg
-                  width="22"
-                  height="22"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#a855f7"
@@ -83,17 +82,16 @@ export default function Skills() {
               </div>
               <h3 className="pillar-title">AI &amp; LLM Engineering</h3>
               <p className="pillar-desc">
-                Building RAG pipelines, autonomous agent workflows, and LLM
-                integrations with LangChain, OpenAI GPT-4o, Claude 3.5, and
-                vector stores.
+                RAG pipelines, agent workflows &amp; multi-model LLM integrations
+                with LangChain, OpenAI &amp; Claude.
               </p>
             </div>
 
             <div className="pillar-card">
               <div className="pillar-icon pillar-icon-services">
                 <svg
-                  width="22"
-                  height="22"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#34d399"
@@ -108,17 +106,16 @@ export default function Skills() {
               </div>
               <h3 className="pillar-title">Scalable Microservices</h3>
               <p className="pillar-desc">
-                Designing resilient REST &amp; event-driven microservices with
-                Spring Boot, NestJS, Kafka, Redis, and PostgreSQL serving
-                millions of users.
+                Event-driven microservices with Spring Boot, NestJS, Kafka,
+                Redis &amp; PostgreSQL.
               </p>
             </div>
 
             <div className="pillar-card">
               <div className="pillar-icon pillar-icon-cloud">
                 <svg
-                  width="22"
-                  height="22"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#60a5fa"
@@ -131,9 +128,8 @@ export default function Skills() {
               </div>
               <h3 className="pillar-title">Cloud &amp; DevOps Telemetry</h3>
               <p className="pillar-desc">
-                Deploying containerized workloads on AWS EKS with Argo CD,
-                Kubernetes, and full-stack observability via Prometheus and
-                Grafana.
+                Containerized deployments on AWS EKS with Kubernetes, Argo CD,
+                Prometheus &amp; Grafana.
               </p>
             </div>
           </div>

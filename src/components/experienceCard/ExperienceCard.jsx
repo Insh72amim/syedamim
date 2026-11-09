@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import {ChevronDown, ChevronUp} from "lucide-react";
 import "./ExperienceCard.scss";
 
 function renderHighlightedText(text) {
@@ -19,6 +20,10 @@ function renderHighlightedText(text) {
 }
 
 export default function ExperienceCard({cardInfo, isDark}) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const hasBullets = cardInfo.descBullets && cardInfo.descBullets.length > 0;
+
   const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
@@ -67,9 +72,33 @@ export default function ExperienceCard({cardInfo, isDark}) {
             {renderHighlightedText(cardInfo.desc)}
           </p>
         )}
-        <ul className="exp-bullets-list">
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+
+        {hasBullets && (
+          <>
+            <div
+              className={`exp-expandable-content ${
+                isExpanded ? "expanded" : "collapsed"
+              }`}
+            >
+              <ul className="exp-bullets-list">
+                <GetDescBullets
+                  descBullets={cardInfo.descBullets}
+                  isDark={isDark}
+                />
+              </ul>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="exp-toggle-btn"
+              aria-expanded={isExpanded}
+            >
+              <span>{isExpanded ? "Show less" : "Show more details"}</span>
+              {isExpanded ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+            </button>
+          </>
+        )}
       </div>
 
       {cardInfo.techStack && cardInfo.techStack.length > 0 && (

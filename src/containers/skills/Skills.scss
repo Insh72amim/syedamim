@@ -2,15 +2,15 @@
 
 .skills-header-center {
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .skills-heading {
-  font-size: 2.25rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   color: #0f172a;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .dark-mode .skills-heading {
@@ -18,18 +18,22 @@
 }
 
 .skills-text-subtitle {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #3b82f6;
-  text-transform: uppercase;
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #64748b;
   margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark-mode .skills-text-subtitle {
+  color: #94a3b8;
 }
 
 .skills-main-div {
   display: flex;
-  gap: 28px;
+  gap: 20px;
   align-items: stretch;
 }
 
@@ -40,15 +44,15 @@
 .skills-pillars-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 12px;
   height: 100%;
 }
 
 .pillar-card {
   background: #111827;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 22px 18px;
+  border-radius: 10px;
+  padding: 16px 14px;
   transition: all 0.25s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -65,12 +69,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .pillar-icon-data {
@@ -94,15 +98,15 @@
 }
 
 .pillar-title {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: #f8fafc;
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 
 .pillar-desc {
-  font-size: 0.85rem;
-  line-height: 1.55;
+  font-size: 0.8rem;
+  line-height: 1.45;
   color: #94a3b8;
   margin: 0;
 }
@@ -110,40 +114,42 @@
 .skills-text-div {
   background: #111827;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 26px;
+  border-radius: 10px;
+  padding: 20px;
   height: 100%;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-overview-title {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 600;
   color: #f8fafc;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
 }
 
 .skills-bullet-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-top: 18px;
+  gap: 8px;
+  margin-top: 14px;
 }
 
 .skill-bullet-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
 }
 
 .bullet-icon {
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .skills-text {
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.84rem;
+  line-height: 1.45;
   color: #cbd5e1;
   margin: 0;
 }

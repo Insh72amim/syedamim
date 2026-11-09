@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 
 .software-skills-main-div {
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 .dev-icons {
@@ -9,32 +9,33 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
   margin: 0;
 }
 
 .software-skill-inline {
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  padding: 10px 14px;
-  min-width: 68px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  min-width: auto;
   transition: all 0.2s ease;
 }
 
 .software-skill-inline:hover {
   background: rgba(59, 130, 246, 0.12);
   border-color: rgba(59, 130, 246, 0.35);
-  transform: translateY(-2px);
+  transform: translateY(-1px);
 }
 
 .software-skill-inline > i {
   color: #94a3b8;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 

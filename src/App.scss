@@ -29,11 +29,12 @@ body.light-mode,
 .greet-main,
 .education-section,
 .techstack-main,
-.experience-container {
+.experience-container,
+.reading-shelf-section {
   width: 100%;
   max-width: 1160px;
   margin: 0 auto !important;
-  padding: 60px 24px !important;
+  padding: 32px 24px !important;
   box-sizing: border-box;
 }
 
@@ -42,9 +43,10 @@ body.light-mode,
   .greet-main,
   .education-section,
   .techstack-main,
-  .experience-container {
+  .experience-container,
+  .reading-shelf-section {
     max-width: 1180px;
-    padding: 70px 28px !important;
+    padding: 36px 28px !important;
   }
 }
 
@@ -53,8 +55,9 @@ body.light-mode,
   .greet-main,
   .education-section,
   .techstack-main,
-  .experience-container {
-    padding: 40px 16px !important;
+  .experience-container,
+  .reading-shelf-section {
+    padding: 24px 16px !important;
   }
 }
 
