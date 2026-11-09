@@ -622,7 +622,7 @@ const Layout = () => {
         {/* Top Section Navigation Bar on Portfolio Page */}
         {isPortfolioRoute && (
           <div className="sticky top-[57px] lg:top-0 z-10 border-b border-gray-800/80 bg-gray-900/90 backdrop-blur-md">
-            <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+            <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar scroll-smooth">
               {PORTFOLIO_SECTIONS.map((sec) => {
                 const SecIcon = sec.icon;
                 const isSecActive = activePortfolioSection === sec.id;
@@ -631,9 +631,9 @@ const Layout = () => {
                     key={sec.id}
                     type="button"
                     onClick={() => handlePortfolioSectionClick(sec.id)}
-                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all ${
+                    className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-all flex-shrink-0 ${
                       isSecActive
-                        ? "bg-blue-900/40 text-blue-400 border border-blue-700/50"
+                        ? "bg-blue-900/40 text-blue-400 border border-blue-700/50 shadow-sm"
                         : "text-gray-400 hover:text-white hover:bg-gray-800"
                     }`}
                   >
@@ -642,6 +642,7 @@ const Layout = () => {
                   </button>
                 );
               })}
+              <div className="w-4 flex-shrink-0" aria-hidden="true" />
             </div>
           </div>
         )}
