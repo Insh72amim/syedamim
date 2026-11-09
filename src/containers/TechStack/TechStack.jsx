@@ -11,7 +11,7 @@ export default function TechStack() {
       <div className="animate-fade-in">
         <div className="main" id="techstack">
           <div className="section-header-center">
-            <div className="section-eyebrow">TECH ARSENAL</div>
+            <div className="section-eyebrow">TECH STACK</div>
             <h1
               className={
                 isDark ? "dark-mode techstack-heading" : "techstack-heading"

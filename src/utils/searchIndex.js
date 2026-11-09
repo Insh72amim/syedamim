@@ -118,7 +118,7 @@ export const searchContent = (query) => {
           path: (typeof tech === 'object' && tech.shelfPath) ? tech.shelfPath : '/#techstack',
           description: (typeof tech === 'object' && tech.shelfPath)
             ? `Open ${name} deep-dive in KnowledgeShelf or view in Portfolio Tech Stack`
-            : `Portfolio Tech Arsenal — ${group.Stack}`,
+            : `Portfolio Tech Stack — ${group.Stack}`,
           icon: Cpu,
           score,
           category: 'Portfolio • Tech Stack'

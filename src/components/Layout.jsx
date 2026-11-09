@@ -28,7 +28,7 @@ const PORTFOLIO_SECTIONS = [
   { id: "skills", name: "Core Capabilities", icon: Sparkles },
   { id: "experience", name: "Work Experience", icon: Briefcase },
   { id: "education", name: "Education", icon: GraduationCap },
-  { id: "techstack", name: "Tech Arsenal", icon: Cpu },
+  { id: "techstack", name: "Tech Stack", icon: Cpu },
   { id: "projects", name: "Projects", icon: FolderGit2 },
   { id: "codingprofile", name: "Coding Profiles", icon: Code2 },
   { id: "achievements", name: "Achievements", icon: Award },
