@@ -32,7 +32,6 @@ const PORTFOLIO_SECTIONS = [
   { id: "projects", name: "Projects", icon: FolderGit2 },
   { id: "codingprofile", name: "Coding Profiles", icon: Code2 },
   { id: "achievements", name: "Achievements", icon: Award },
-  { id: "reading-shelf", name: "Reading Shelf", icon: BookOpen },
   { id: "contact", name: "Get In Touch", icon: Mail },
 ];
 

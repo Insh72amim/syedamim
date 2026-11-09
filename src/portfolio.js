@@ -61,65 +61,6 @@ const socialMediaLinks = {
   display: true
 };
 
-// Reading Shelf & Goodreads Books
-const readingShelf = {
-  display: true,
-  title: "Reading Shelf",
-  subtitle: "Books currently exploring & all-time favorites",
-  goodreadsProfile: "https://www.goodreads.com/review/list/200312913",
-  totalBooks: 77,
-  books: [
-    {
-      title: "White Nights",
-      author: "Fyodor Dostoevsky",
-      status: "Currently Reading",
-      shelf: "Fiction / Classics",
-      cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1450699039l/1772910.jpg",
-      link: "https://www.goodreads.com/book/show/1772910.White_Nights"
-    },
-    {
-      title: "Schaum's Outline of Linear Algebra",
-      author: "Seymour Lipschutz",
-      status: "Currently Reading",
-      shelf: "Math & AI",
-      cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386921722l/205506.jpg",
-      link: "https://www.goodreads.com/book/show/205506.Schaum_s_Outline_of_Linear_Algebra"
-    },
-    {
-      title: "Atomic Habits",
-      author: "James Clear",
-      status: "Read",
-      shelf: "Psychology",
-      cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1655988385l/40121378.jpg",
-      link: "https://www.goodreads.com/book/show/40121378-atomic-habits"
-    },
-    {
-      title: "Shoe Dog",
-      author: "Phil Knight",
-      status: "Read",
-      shelf: "Memoir / Business",
-      cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457284880l/27220736.jpg",
-      link: "https://www.goodreads.com/book/show/27220736-shoe-dog"
-    },
-    {
-      title: "Animal Farm",
-      author: "George Orwell",
-      status: "Read",
-      shelf: "Political Satire",
-      cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1325861570l/170448.jpg",
-      link: "https://www.goodreads.com/book/show/170448.Animal_Farm"
-    },
-    {
-      title: "Eat That Frog!",
-      author: "Brian Tracy",
-      status: "Read",
-      shelf: "Productivity",
-      cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328854785l/95887.jpg",
-      link: "https://www.goodreads.com/book/show/95887.Eat_That_Frog_21_Great_Ways_to_Stop_Procrastinating_and_Get_More_Done_in_Less_Time"
-    }
-  ]
-};
-
 // Skills Section
 const skillsSection = {
   title: "Core Capabilities",
@@ -695,6 +636,5 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  codingProfile,
-  readingShelf
+  codingProfile
 };
